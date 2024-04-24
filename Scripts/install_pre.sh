@@ -26,20 +26,35 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
       sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/c\GRUB_CMDLINE_LINUX_DEFAULT=\"${gcld} nvidia_drm.modeset=1\"" /etc/default/grub
     fi
 
-    echo -e "Select grub theme:\n[1] Retroboot (dark)\n[2] Pochita (light)"
+    echo -e "
+Select grub theme:
+Dark Themes:
+[1] Retroboot
+[2]boo
+[3]Cyberpunk
+[4]Vimix
+[5]NeonPurple
+[6]SekiroShadow
+Light Themes:
+[7]Pochita
+[8]Aesthetic
+[9]Doraemon
+[10]GradientColor
+[11]Blue Screen Of Life
+      "
     read -p " :: Press enter to skip grub theme <or> Enter option number : " grubopt
     case ${grubopt} in
     1) grubtheme="Retroboot" ;;
-    2) grubtheme="Pochita" ;;
-    3) grubtheme="Aesthetic" ;;
-    4) grubtheme="boo" ;;
-    5) grubtheme="bsol" ;;
-    6) grubtheme="Cyberpunk" ;;
-    7) grubtheme="Vimix" ;;
-    8) grubtheme="NeonPurple" ;;
-    9) grubtheme="SekiroShadow" ;;
-    10) grubtheme="Doraemon" ;;
-    11) grubtheme="GradientColor" ;;
+    2) grubtheme="boo" ;;
+    3) grubtheme="Cyberpunk" ;;
+    4) grubtheme="Vimix" ;;
+    5) grubtheme="NeonPurple" ;;
+    6) grubtheme="SekiroShadow" ;;
+    7) grubtheme="Pochita" ;;
+    8) grubtheme="Aesthetic" ;;
+    9) grubtheme="Doraemon" ;;
+    10) grubtheme="GradientColor" ;;
+    11) grubtheme="bsol" ;;
     *) grubtheme="None" ;;
     esac
 
