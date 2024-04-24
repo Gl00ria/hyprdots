@@ -68,13 +68,46 @@ vim                                                    # terminal text editor
 code                                                   # ide text editor
 
 # --------------------------------------------------- // Shell
-eza|zsh                                                # file lister for zsh
-oh-my-zsh-git|zsh                                      # plugin manager for zsh
-zsh-theme-powerlevel10k|zsh oh-my-zsh-git              # theme for zsh
-lsd|fish                                               # file lister for fish
-starship|fish                                          # customizable shell prompt
-fastfetch                                              # system information fetch tool
-pokemon-colorscripts-git|zsh                           # display pokemon sprites
+eza|zsh fish                                           # file lister for zsh
+oh-my-zsh|zsh                                          # plugin manager for zsh
+starship|fish zsh                                      # customizable shell prompt
 
 # --------------------------------------------------- // HyDE
 hyde-cli-git                                           # cli tool to manage hyde
+
+#╒═══════════════════════════════════════════════════════════╕
+#│                                                           │
+#│                    Gl00ria's Pkgs                         │
+#│                                                           │
+#╘═══════════════════════════════════════════════════════════╛
+# --------------------------------------------------- // Intel
+# implementation for "OpenGL"
+mesa
+mesa-utils
+# more control over the GPU + better performance for some games
+vulkan-intel
+vulkan-headers
+vulkan-tools
+vulkan-icd-loader
+
+# --------------------------------------------------- // Nvidia
+optimus-manager
+optimus-manager-qt
+optimus-manager-qt-kde
+
+# --------------------------------------------------- // Security
+ufw # ufw (Uncompleted Firewall) pkg
+apparmor # LSM (Linux Security Module), by providing MAC (Mandatory Access Control)
+audit # apparmor req
+# get desktop notifications on denied actions (for apparmor)
+python-notify2
+python-psutil
+
+# --------------------------------------------------- // Power Management
+tlp
+auto-cpufreq
+powertop
+
+# --------------------------------------------------- // Backup Utils
+timeshift
+grub-btrfs
