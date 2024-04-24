@@ -48,10 +48,10 @@ while read -r pkg deps; do
     echo -e "\033[0;33m[skip]\033[0m ${pkg} is already installed..."
   elif pkg_available "${pkg}"; then
     repo=$(pacman -Si "${pkg}" | awk -F ': ' '/Repository / {print $2}')
-    echo -e "\033[0;32m[${repo}]\033[0m queueing ${pkg} from official arch repo..."
+    echo -e "\033[0;32m[${repo}]\033[0m queueing ${pkg} from \033[0;32m[OFFICIAL ARCH REPO...\033[0m"
     archPkg+=("${pkg}")
   elif aur_available "${pkg}"; then
-    echo -e "\033[0;34m[aur]\033[0m queueing ${pkg} from arch user repo..."
+    echo -e "\033[0;34m[aur]\033[0m queueing ${pkg} from \033[0;34m ARCH USER REPO...\033[0m"
     aurhPkg+=("${pkg}")
   else
     echo "Error: unknown package ${pkg}..."

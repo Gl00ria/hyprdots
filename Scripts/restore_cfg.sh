@@ -40,7 +40,7 @@ cat "${CfgLst}" | while read lst; do
 
   while read -r pkg_chk; do
     if ! pkg_installed "${pkg_chk}"; then
-      echo -e "\033[0;33m[skip]\033[0m ${pth}/${cfg} as dependency ${pkg_chk} is not installed..."
+      echo -e "\033[0;33m[skip]\033[0m ${pth}/${cfg} as dependency \033[0;33m${pkg_chk}\033[0mis not installed..."
       continue 2
     fi
   done < <(echo "${pkg}" | xargs -n 1)

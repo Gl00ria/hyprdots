@@ -93,7 +93,7 @@ vulkan-icd-loader
 # --------------------------------------------------- // Nvidia
 optimus-manager
 optimus-manager-qt
-optimus-manager-qt-kde
+# optimus-manager-qt-kde # install manully, otherwise would fail
 
 # --------------------------------------------------- // Security
 ufw # ufw (Uncompleted Firewall) pkg
