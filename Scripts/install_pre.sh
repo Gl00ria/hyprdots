@@ -31,6 +31,15 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
     case ${grubopt} in
     1) grubtheme="Retroboot" ;;
     2) grubtheme="Pochita" ;;
+    3) grubtheme="Aesthetic" ;;
+    4) grubtheme="boo" ;;
+    5) grubtheme="bsol" ;;
+    6) grubtheme="Cyberpunk" ;;
+    7) grubtheme="Vimix" ;;
+    8) grubtheme="NeonPurple" ;;
+    9) grubtheme="SekiroShadow" ;;
+    10) grubtheme="Doraemon" ;;
+    11) grubtheme="GradientColor" ;;
     *) grubtheme="None" ;;
     esac
 
@@ -40,13 +49,12 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
     else
       echo -e "\033[0;32m[BOOTLOADER]\033[0m Setting grub theme // ${grubtheme}"
       sudo tar -xzf ${cloneDir}/Source/arcs/Grub_${grubtheme}.tar.gz -C /usr/share/grub/themes/
-      sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=saved
-            /^GRUB_GFXMODE=/c\GRUB_GFXMODE=1280x1024x32,auto
+      sudo sed -i "/^GRUB_DEFAULT=/c\GRUB_DEFAULT=0
+            /^GRUB_GFXMODE=/c\GRUB_GFXMODE=auto
             /^GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/${grubtheme}/theme.txt\"
             /^#GRUB_THEME=/c\GRUB_THEME=\"/usr/share/grub/themes/${grubtheme}/theme.txt\"
-            /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=true" /etc/default/grub
+            /^#GRUB_SAVEDEFAULT=true/c\GRUB_SAVEDEFAULT=false" /etc/default/grub
     fi
-
     sudo grub-mkconfig -o /boot/grub/grub.cfg
   else
     echo -e "\033[0;33m[SKIP]\033[0m grub is already configured..."
