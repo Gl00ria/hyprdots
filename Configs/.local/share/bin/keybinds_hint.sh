@@ -33,7 +33,7 @@ Options:"
  -h     Display this help message
 Example:
  $0 -j -p -d '>' -f custom_file.txt -w 80 -h"
-    
+
 For mapping key codes, create a file named $keycodeFile and use the following format:
 "number": "symbol",
 example: "61": "/",
@@ -176,8 +176,8 @@ include "hyprdots-keybinds";
 
   def modmask_mapping: { #? Define mapping for modmask numbers represents bitmask
     "64": " ",  #? SUPER  󰻀
-    "8": "ALT", 
-    "4": "CTRL", 
+    "8": "ALT",
+    "4": "CTRL",
     "1": "SHIFT",
     "0": " ",
   };
@@ -202,7 +202,7 @@ include "hyprdots-keybinds";
     "XF86MonBrightnessDown" : "󰃜",
     "XF86MonBrightnessUp" : "󰃠",
     "switch:on:Lid Switch" : "󰛧",
-    "backspace" : "󰁮 ",  
+    "backspace" : "󰁮 ",
   };
   def category_mapping: { #? Define Category Names, derive from Dispatcher #? This will serve as the Group header
     "exec" : "Execute a Command:",
@@ -221,7 +221,7 @@ include "hyprdots-keybinds";
     "workspace" : "Navigate Workspace",
     "movetoworkspace" : "Navigate Workspace",
     "movetoworkspacesilent" : "Navigate Workspace",
-    
+
   };
 def arg_mapping: { #! Do not Change this used for Demo only... As this will change .args! will be fatal
     "arg2": "mapped_arg2",
@@ -246,7 +246,7 @@ def arg_mapping: { #! Do not Change this used for Demo only... As this will chan
   };
   #? Funtions to Convert modmask into Keys, There should be a beter math for this but Im lazy
   #? Also we can just map it manually too
-  def get_keys: 
+  def get_keys:
     if . == 0 then
       ""
     elif . >= 64 then
@@ -281,7 +281,7 @@ def get_keycode:
 .key |= (key_mapping[.] // .) | #? Apply the get_key
 
 # .keybind = (.modmask | tostring // "") + (.key // "") | #! Same as below but without the keycode
-.keybind = (.modmask | tostring // "") + (.key // "") + ((.keycode // 0) | tostring) | #? Show the keybindings 
+.keybind = (.modmask | tostring // "") + (.key // "") + ((.keycode // 0) | tostring) | #? Show the keybindings
 
 .flags = " locked=" + (.locked | tostring) + " mouse=" + (.mouse | tostring) + " release=" + (.release | tostring) + " repeat=" + (.repeat | tostring) + " non_consuming=" + (.non_consuming | tostring) | #? This are the flags repeat,lock etc
 
@@ -295,7 +295,7 @@ if .keybind and .keybind != " " and .keybind != "" then .keybind |= (split(" ") 
 
   .executables |= (executables_mapping[.] // .) | #? conversions
   .description |= (description_mapping[.] // .)    #? Convert to description
- 
+
 ' #* <---- There is a '   do not delete this'
 
 )"
