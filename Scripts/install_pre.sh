@@ -30,17 +30,18 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
 Select grub theme:
 Dark Themes:
 [1] Retroboot
-[2]boo
-[3]Cyberpunk
-[4]Vimix
-[5]NeonPurple
-[6]SekiroShadow
+[2] boo
+[3] Cyberpunk
+[4] Vimix
+[5] NeonPurple
+[6] SekiroShadow
+
 Light Themes:
-[7]Pochita
-[8]Aesthetic
-[9]Doraemon
-[10]GradientColor
-[11]Blue Screen Of Life
+[7] Pochita
+[8] Aesthetic
+[9] Doraemon
+[10] GradientColor
+[11] Blue Screen Of Life
       "
     read -p " :: Press enter to skip grub theme <or> Enter option number : " grubopt
     case ${grubopt} in
