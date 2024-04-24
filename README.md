@@ -221,36 +221,19 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 # Gl00ria's Custom Remix...:
 
 #### Grub themes: 'With Credits to the authors'
+- Theme 1-5: by [MrVivekRajan](https://github.com/MrVivekRajan/Grub-Themes)
+- Theme 6 & 7: by [ChrisTitusTech](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
+- Theme 8: by [PROxZIMA](https://github.com/PROxZIMA/boo-grub)
+- Theme 9: by [harishnkr](https://github.com/harishnkr/bsol)
 
-<div align="center"><table><tr>Rofi Launcher</tr><tr><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_1.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_2.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_3.png"/></td></tr><tr><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_4.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_5.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_6.png"/></td></tr><tr><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_7.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_8.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_9.png"/></td></tr><tr><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_10.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_11.png"/></td><td>
-<img src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/rofi_style_12.png"/></td></tr>
+<div align="center"><table><tr>Grub Themes</tr><tr><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_aesthetic.png"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_doraemon.png"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_gradient.png"/></td></tr><tr><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_neon_purple.png"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_sekiro.png"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_cyberpunk.jpg"/></td></tr><tr><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_vimix.jpg"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_boo.png"/></td><td>
+<img src="https://raw.githubusercontent.com/Gl00ria/hyprdots/personal/Source/assets/Grub_bsol.png"/></td></tr>
 </table></div>
-
-- [ Aesthetic ](https://github.com/MrVivekRajan/Grub-Themes):
-
-- [Doraemon:](https://github.com/MrVivekRajan/Grub-Themes)
-
-- [GradientColor:](https://github.com/MrVivekRajan/Grub-Themes)
-
-- [NeonPurple:](https://github.com/MrVivekRajan/Grub-Themes)
-
-- [SekiroShadow:](https://github.com/MrVivekRajan/Grub-Themes)
-
-- [Boo:](https://github.com/PROxZIMA/boo-grub)
-
-- [Bule Screen Of Life:](https://github.com/harishnkr/bsol)
-
-- [Vimix:](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
-
-- [Cyberpunk:](https://github.com/ChrisTitusTech/Top-5-Bootloader-Themes)
