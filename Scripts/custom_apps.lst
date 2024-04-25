@@ -1,13 +1,16 @@
-#neovim
-#emote
-#trash-cli-git
+hyde-cli-git                                           # cli tool to manage hyde
+hyprpicker                                             # color picker
+pokemon-colorscripts-git                               # display pokemon sprites
+code                                                   # ide text editor
+cava                                                   # audio visualizer
+#emote                                                 # emoji picker
+nushell
+ttf-bitstream-vera
+cantarell-fonts
+ttf-dejavu
 #downgrade
-#steam
 #gamemode
 #gamescope
-#mangohud
-cava
-#spotify
-#spicetify-cli
 #libinput-gestures
 #gestures
+#ttf-hack-nerd|neovide

@@ -33,3 +33,6 @@ N|Y|${HOME}/.config|libinput-gestures.conf|libinput-gestures
 Y|Y|${HOME}/.config/autostart|apparmor-notify.desktop|apparmor
 Y|Y|${HOME}|.bashrc|bash
 Y|Y|${HOME}/.config|bashrc|bash
+Y|Y|${HOME}|.zshrc|zsh
+Y|Y|${HOME}/.config|zshrc|zsh
+Y|Y|${HOME}/.config|starship|bash zsh fish

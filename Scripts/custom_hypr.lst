@@ -25,13 +25,12 @@ qt5-graphicaleffects                                   # for sddm theme effects
 # --------------------------------------------------- // Window Manager
 hyprland                                               # wlroots-based wayland compositor
 dunst                                                  # notification daemon
-rofi-lbonn-wayland-git                                 # application launcher
+rofi-lbonn-wayland                                     # application launcher
 waybar                                                 # system bar
 swww                                                   # wallpaper
-swaylock-effects-git                                   # lock screen
+swaylock-effects                                       # lock screen
 wlogout                                                # logout menu
 grimblast-git                                          # screenshot tool
-hyprpicker                                             # color picker
 slurp                                                  # region select for screenshot/screenshare
 swappy                                                 # screenshot editor
 cliphist                                               # clipboard manager
@@ -51,7 +50,7 @@ kservice5                                              # for "open with" menu in
 libnotify                                              # for notifications
 
 # --------------------------------------------------- // Theming
-nwg-look                                               # gtk configuration tool
+nwg-look-bin                                           # gtk configuration tool
 qt5ct                                                  # qt5 configuration tool
 qt6ct                                                  # qt6 configuration tool
 kvantum                                                # svg based qt6 theme engine
@@ -65,19 +64,11 @@ kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
 vim                                                    # terminal text editor
-code                                                   # ide text editor
-
-# --------------------------------------------------- // Shell
-eza|zsh fish                                           # file lister for zsh
-oh-my-zsh|zsh                                          # plugin manager for zsh
-starship|fish zsh                                      # customizable shell prompt
-
-# --------------------------------------------------- // HyDE
-hyde-cli-git                                           # cli tool to manage hyde
+visual-studio-code-bin
 
 #╒═══════════════════════════════════════════════════════════╕
 #│                                                           │
-#│                    Gl00ria's Pkgs                         │
+#│                    Gl00ria's Remix                        │
 #│                                                           │
 #╘═══════════════════════════════════════════════════════════╛
 # --------------------------------------------------- // Intel
@@ -111,3 +102,29 @@ powertop
 # --------------------------------------------------- // Backup Utils
 timeshift
 grub-btrfs
+# --------------------------------------------------- // Shells
+eza|zsh                                                # file lister for zsh
+oh-my-zsh-git|zsh                                      # plugin manager for zsh
+zsh-autosuggestions|zsh
+zsh-fast-syntax-highlighting|zsh
+starship|fish zsh                                      # customizable shell prompt
+fastfetch                                              # system information fetch tool
+# --------------------------------------------------- // Fonts
+adobe-source-code-pro-fonts
+freetype2                                             # font reserization lib
+gsfonts                                               # base 32 font set
+ttf-liberation                                        # Arial, Times New Roman etc..
+ttf-opensans                                          # Sans-serif
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+xorg-fonts-encodings
+ttf-fantasque-nerd|neovide kitty
+ttf-firacode-nerd|neovide kitty
+ttf-victor-mono-nerd|waybar dunst neovide kitty
+ttf-cascadia-code-nerd|waybar dunst neovide kitty
+ttf-iosevka-nerd|neovide
+ttf-jetbrains-nerd|neovide
+ttf-maple|visual-studio-code-bin
+ttf-material-design-icons-git|hyprland
