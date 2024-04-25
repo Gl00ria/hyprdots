@@ -115,16 +115,11 @@ freetype2                                             # font reserization lib
 gsfonts                                               # base 32 font set
 ttf-liberation                                        # Arial, Times New Roman etc..
 ttf-opensans                                          # Sans-serif
+ttf-victor-mono-nerd|waybar dunst kitty               # used with (waybar, dunst, neovide, kitty)
+ttf-material-design-icons-git|hyprland
+ttf-maple|visual-studio-code-bin
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 xorg-fonts-encodings
-ttf-fantasque-nerd|neovide kitty
-ttf-firacode-nerd|neovide kitty
-ttf-victor-mono-nerd|waybar dunst neovide kitty
-ttf-cascadia-code-nerd|waybar dunst neovide kitty
-ttf-iosevka-nerd|neovide
-ttf-jetbrains-nerd|neovide
-ttf-maple|visual-studio-code-bin
-ttf-material-design-icons-git|hyprland

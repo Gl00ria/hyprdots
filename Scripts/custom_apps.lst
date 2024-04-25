@@ -5,6 +5,11 @@ code                                                   # ide text editor
 cava                                                   # audio visualizer
 #emote                                                 # emoji picker
 nushell
+ttf-fantasque-nerd                                    # optional for (neovide kitty)
+ttf-firacode-nerd                                     # optional for (neovide kitty)
+ttf-iosevka-nerd                                      # optional (neovide)
+ttf-jetbrains-nerd                                    # optional (neovide)
+ttf-cascadia-code-nerd                                # optional (waybar dunst neovide kitty)
 ttf-bitstream-vera
 cantarell-fonts
 ttf-dejavu
