@@ -35,4 +35,7 @@ Y|Y|${HOME}|.bashrc|bash
 Y|Y|${HOME}/.config|bashrc|bash
 Y|Y|${HOME}|.zshrc|zsh
 Y|Y|${HOME}/.config|zshrc|zsh
-Y|Y|${HOME}/.config|starship|bash zsh fish
+Y|Y|${HOME}/.config|starship|bash zsh
+Y|Y|${HOME}/.config|btop|btop
+Y|Y|${HOME}/.config|lazygit|lazygit
+Y|Y|${HOME}/.config|nvim|neovim

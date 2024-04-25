@@ -1,9 +1,9 @@
-hyde-cli-git                                           # cli tool to manage hyde
-hyprpicker                                             # color picker
-pokemon-colorscripts-git                               # display pokemon sprites
-code                                                   # ide text editor
-cava                                                   # audio visualizer
-#emote                                                 # emoji picker
+hyde-cli-git                                          # cli tool to manage hyde
+hyprpicker                                            # color picker
+pokemon-colorscripts-git                              # display pokemon sprites
+code                                                  # ide text editor
+cava                                                  # audio visualizer
+# emote                                               # emoji picker
 nushell
 ttf-fantasque-nerd                                    # optional for (neovide kitty)
 ttf-firacode-nerd                                     # optional for (neovide kitty)
@@ -13,9 +13,12 @@ ttf-cascadia-code-nerd                                # optional (waybar dunst n
 ttf-bitstream-vera
 cantarell-fonts
 ttf-dejavu
-#downgrade
-#gamemode
-#gamescope
-#libinput-gestures
-#gestures
-#ttf-hack-nerd|neovide
+# downgrade
+# gamemode
+# gamescope
+# libinput-gestures
+# gestures
+# ttf-hack-nerd|neovide
+# alsa-firmware
+# alsa-plugins
+# alsa-utils

@@ -1,17 +1,4 @@
 # --------------------------------------------------- // System
-pipewire                                               # audio/video server
-pipewire-alsa                                          # pipewire alsa client
-pipewire-audio                                         # pipewire audio client
-pipewire-jack                                          # pipewire jack client
-pipewire-pulse                                         # pipewire pulseaudio client
-gst-plugin-pipewire                                    # pipewire gstreamer client
-wireplumber                                            # pipewire session manager
-pavucontrol                                            # pulseaudio volume control
-pamixer                                                # pulseaudio cli mixer
-networkmanager                                         # network manager
-network-manager-applet                                 # network manager system tray utility
-bluez                                                  # bluetooth protocol stack
-bluez-utils                                            # bluetooth utility cli
 blueman                                                # bluetooth manager gui
 brightnessctl                                          # screen brightness control
 udiskie                                                # manage removable media
@@ -38,7 +25,6 @@ cliphist                                               # clipboard manager
 # --------------------------------------------------- // Dependencies
 polkit-gnome                                           # authentication agent
 xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
-pacman-contrib                                         # for system update check
 python-pyamdgpuinfo                                    # for amd gpu info
 parallel                                               # for parallel processing
 jq                                                     # for json processing
@@ -63,7 +49,6 @@ firefox                                                # browser
 kitty                                                  # terminal
 dolphin                                                # kde file manager
 ark                                                    # kde file archiver
-vim                                                    # terminal text editor
 visual-studio-code-bin
 
 #╒═══════════════════════════════════════════════════════════╕
@@ -87,9 +72,9 @@ optimus-manager-qt
 # optimus-manager-qt-kde # install manully, otherwise would fail
 
 # --------------------------------------------------- // Security
-ufw # ufw (Uncompleted Firewall) pkg
-apparmor # LSM (Linux Security Module), by providing MAC (Mandatory Access Control)
-audit # apparmor req
+ufw                                     # ufw (Uncompleted Firewall) pkg
+apparmor          # LSM (Linux Security Module), by providing MAC (Mandatory Access Control)
+audit                                   # apparmor req
 # get desktop notifications on denied actions (for apparmor)
 python-notify2
 python-psutil
@@ -104,19 +89,89 @@ timeshift
 grub-btrfs
 # --------------------------------------------------- // Shells
 zsh
-eza|zsh                                                # file lister for zsh
-oh-my-zsh-git|zsh                                      # plugin manager for zsh
+eza|zsh                                  # file lister for zsh
+oh-my-zsh-git|zsh                        # plugin manager for zsh
 zsh-autosuggestions|zsh
 zsh-fast-syntax-highlighting|zsh
-starship|zsh                                           # customizable shell prompt
-fastfetch                                              # system information fetch tool
+starship|zsh                             # customizable shell prompt
+fastfetch                                # system information fetch tool
+
+# --------------------------------------------------- // Pkg management
+reflector                                # find pacman's fastest merrors --> alias == True
+pacman-contrib                           # for system update check
+pkgfile                                  # pacman (.files) metadat explorer
+rebuild-detector                         # detects which pkg need to be rebuilt
+python-packaging                         # utils for python-packaging
+
+# --------------------------------------------------- // Networking
+ntp                                      # Network Time Protocol
+dnsmasq                                  # DNS forwarder & DHCP server
+dhclient                                 # DHCP client
+ethtool                                  # util to control netwrok drivers & hardware
+modemmanager                             # mobile broadband modem management service
+networkmanager                           # network manager
+network-manager-applet                   # network manager system tray utility
+nss-mdns                                 # host-name resolution via (mDNS)
+net-tools                                # host-name resolution via (mDNS)
+openssh                                  # come on :)
+b43-fwcutter                             # firmware extractor for (b43) kernel module
+iwd                                      # internet wireless daemon
+wpa_supplicant                           # util for WPA wirless network
+openvpn                                  # VPN
+networkmanager-openvpn                   # OpenVPN plugin for 'networkmanager'
+
+# --------------------------------------------------- // File System Support
+ntfs-3g                                  # NTFS filesystem driver and utilities
+nfs-utils                                # Network fs
+mtools                                   # access (MS-DOS) disks
+efitools                                 # UEFI secure boot platforms
+
+# --------------------------------------------------- // Audio
+pavucontrol                              # pulseaudio volume control
+pamixer                                  # pulseaudio cli mixer
+pipewire                                 # audio/video server
+wireplumber                              # pipewire session manager
+pipewire-alsa                            # pipewire alsa client
+pipewire-audio                           # pipewire audio client
+pipewire-jack                            # pipewire jack client
+pipewire-pulse                           # pipewire pulseaudio client
+gst-plugin-pipewire                      # pipewire gstreamer client
+
+# --------------------------------------------------- // bluetooth
+bluez                                    # bluetooth protocol stack
+bluez-utils                              # bluetooth utility cli
+
+# --------------------------------------------------- // Archive utils
+p7zip
+unrar
+unzip
+
+# --------------------------------------------------- // System Info
+nvtop                                    # AMD, NVIDIA & INTEL) process monitor
+ncdu                                     # disk usage analyzer
+btop                                     # (CPU, memory, disks, netword & processes) monitor config == True
+
+# --------------------------------------------------- // Git
+git
+lazygit|git                              # awesome TUI for git, config == True
+git-delta|git                            # syntax-highlihgting pager
+
+# --------------------------------------------------- // Editors
+vim                                      # come on :)
+neovim                                   # come on :)
+clang|neovim                             # required for treesitter parsers
+python-pynvim|neovim                     # neovim python's support
+neovide|neovim                           # C00L GUI for neovim
+zathura                                  # terminal pdf reader
+zathura-pdf-poppler|zathura
+
 # --------------------------------------------------- // Fonts
 adobe-source-code-pro-fonts
-freetype2                                             # font reserization lib
-gsfonts                                               # base 32 font set
-ttf-liberation                                        # Arial, Times New Roman etc..
-ttf-opensans                                          # Sans-serif
-ttf-victor-mono-nerd|waybar dunst kitty               # used with (waybar, dunst, neovide, kitty)
+freetype2                                # font reserization lib
+gsfonts                                  # base 32 font set
+ttf-liberation                           # Arial, Times New Roman etc..
+ttf-opensans                             # Sans-serif
+ttf-victor-mono-nerd|waybar dunst kitty  # used with (waybar, dunst, neovide, kitty)
 ttf-material-design-icons-git|hyprland
 ttf-maple|visual-studio-code-bin
 noto-fonts
