@@ -59,11 +59,6 @@ cat "${CfgLst}" | while read lst; do
       echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} \033[0;34m-->\033[0m${BkpDir}${tgt}..."
     fi
 
-    if [[ "${pth}" == /etc/* ]]; then
-      sudo mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || exit 1
-    else
-      [ "${ovrWrte}" == "Y" ] && mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || cp -r "${pth}/${cfg_chk}" "${BkpDir}${tgt}"
-    fi
     echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} \033[0;34m-->\033[0m ${BkpDir}${tgt}..."
 
     if [ ! -d "${pth}" ]; then
