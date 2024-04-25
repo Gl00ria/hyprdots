@@ -28,7 +28,7 @@ if pkg_installed grub && [ -f /boot/grub/grub.cfg ]; then
 
     echo -e "
 Select grub theme:
-Dark Themes:
+\033[0;34mDark Themes:\033[0m
 [1] Retroboot
 [2] boo
 [3] Cyberpunk
@@ -36,7 +36,7 @@ Dark Themes:
 [5] NeonPurple
 [6] SekiroShadow
 
-Light Themes:
+\033[0;33mLight Themes:\033[0m
 [7] Pochita
 [8] Aesthetic
 [9] Doraemon

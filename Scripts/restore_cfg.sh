@@ -40,7 +40,7 @@ cat "${CfgLst}" | while read lst; do
 
   while read -r pkg_chk; do
     if ! pkg_installed "${pkg_chk}"; then
-      echo -e "\033[0;33m[skip]\033[0m ${pth}/${cfg} as dependency \033[0;33m${pkg_chk}\033[0mis not installed..."
+      echo -e "\033[0;33m[skip]\033[0m ${pth}/${cfg} as dependency \033[0;33m${pkg_chk}\033[0m is not installed..."
       continue 2
     fi
   done < <(echo "${pkg}" | xargs -n 1)
@@ -56,8 +56,15 @@ cat "${CfgLst}" | while read lst; do
       fi
 
       [ "${ovrWrte}" == "Y" ] && mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || cp -r "${pth}/${cfg_chk}" "${BkpDir}${tgt}"
-      echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} --> ${BkpDir}${tgt}..."
+      echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} \033[0;34m-->\033[0m${BkpDir}${tgt}..."
     fi
+
+    if [[ "${pth}" == /etc/* ]]; then
+      sudo mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || exit 1
+    else
+      [ "${ovrWrte}" == "Y" ] && mv "${pth}/${cfg_chk}" "${BkpDir}${tgt}" || cp -r "${pth}/${cfg_chk}" "${BkpDir}${tgt}"
+    fi
+    echo -e "\033[0;34m[backup]\033[0m ${pth}/${cfg_chk} \033[0;34m-->\033[0m ${BkpDir}${tgt}..."
 
     if [ ! -d "${pth}" ]; then
       mkdir -p "${pth}"
@@ -65,12 +72,12 @@ cat "${CfgLst}" | while read lst; do
 
     if [ ! -f "${pth}/${cfg_chk}" ]; then
       cp -r "${CfgDir}${tgt}/${cfg_chk}" "${pth}"
-      echo -e "\033[0;32m[restore]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
+      echo -e "\033[0;32m[restore]\033[0m ${pth} \033[0;32m<--\033[0m ${CfgDir}${tgt}/${cfg_chk}..."
     elif [ "${ovrWrte}" == "Y" ]; then
       cp -r "${CfgDir}$tgt/${cfg_chk}" "${pth}"
-      echo -e "\033[0;33m[overwrite]\033[0m ${pth} <-- ${CfgDir}${tgt}/${cfg_chk}..."
+      echo -e "\033[0;33m[overwrite]\033[0m ${pth} \033[0;33m<--\033[0m${CfgDir}${tgt}/${cfg_chk}..."
     else
-      echo -e "\033[0;33m[preserve]\033[0m Skipping ${pth}/${cfg_chk} to preserve user setting..."
+      echo -e "\033[0;33m[preserve]\033[0m \033[0;33mSkipping\033[0m ${pth}/${cfg_chk} to preserve user setting..."
     fi
   done
 

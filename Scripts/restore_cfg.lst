@@ -30,10 +30,6 @@ Y|Y|${HOME}/.local/share|dolphin|dolphin
 Y|Y|${HOME}/.local/share/kxmlgui5|dolphin|dolphin
 Y|Y|${HOME}/.local/share/kio/servicemenus|hydewallpaper.desktop|dolphin
 N|Y|${HOME}/.config|libinput-gestures.conf|libinput-gestures
-Y|Y|${HOME}/etc/dracut.conf.d|nvidia.conf|nvidia-utils
 Y|Y|${HOME}/.config/autostart|apparmor-notify.desktop|apparmor
-Y|Y|${HOME}/etc|tlp.conf|tlp
-Y|Y|${HOME}/etc|auto-cpufreq.conf|auto-cpufreq
-Y|Y|${HOME}/etc/systemd/system|grub-btrfsd.service|grub-btrfs
-N|Y|${HOME}|.bashrc|bash
-N|Y|${HOME}/.config|bashrc|bash
+Y|Y|${HOME}|.bashrc|bash
+Y|Y|${HOME}/.config|bashrc|bash
