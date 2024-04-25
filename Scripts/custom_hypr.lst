@@ -103,11 +103,12 @@ powertop
 timeshift
 grub-btrfs
 # --------------------------------------------------- // Shells
+zsh
 eza|zsh                                                # file lister for zsh
 oh-my-zsh-git|zsh                                      # plugin manager for zsh
 zsh-autosuggestions|zsh
 zsh-fast-syntax-highlighting|zsh
-starship|fish zsh                                      # customizable shell prompt
+starship|zsh                                           # customizable shell prompt
 fastfetch                                              # system information fetch tool
 # --------------------------------------------------- // Fonts
 adobe-source-code-pro-fonts
