@@ -175,6 +175,9 @@ libdvdcss              # DVD decrybtion
 libgsf                 # I/O lib for structured file format
 libopenraw             # decoding raw files
 
+# --------------------------------------------------- // Langs Support
+jdk-openjdk            # java
+
 # --------------------------------------------------- // Misc
 udiskie                         # manage removable media
 polkit-gnome                    # authentication agent

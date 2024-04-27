@@ -7,11 +7,11 @@
 # WARN: modified to work with (dracut)
 if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]; then
   ### dracut
-  echo "\033[0;33m[COPY]\033[0m (Configs/etc/dracut.conf.d/nvidia.conf) \033[0;33m-->\033[0m (/etc/dracut.conf.d/)"
-  sudo cp "${scrDir}/Configs/etc/dracut.conf.d/nvidia.conf" /etc/dracut.conf.d/
-  echo "\033[0;33m[REBUILD]\033[0m DRACUT"
-  sudo sudo dracut-rebuild
-  echo "\033[0;33m[Enable]\033[0m nvidia(suspend, hibernate & resume) services"
+  echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/dracut.conf.d/nvidia.conf) \033[0;33m-->\033[0m (/etc/dracut.conf.d/)"
+  sudo cp "../../Configs/etc/dracut.conf.d/nvidia.conf" /etc/dracut.conf.d/
+  echo -e "\033[0;33m[REBUILD]\033[0m DRACUT"
+  sudo dracut-rebuild
+  echo -e "\033[0;33m[Enable]\033[0m nvidia(suspend, hibernate & resume) services"
   sudo systemctl enable nvidia-suspend.service
   sudo systemctl enable nvidia-hibernate.service
   sudo systemctl enable nvidia-resume.service

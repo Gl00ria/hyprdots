@@ -1,5 +1,5 @@
 Y|Y|${HOME}/.config/|hyde|hyprland
-Y|Y|${HOME}/.config/hypr|hypr|hyprland
+Y|Y|${HOME}/.config/|hypr|hyprland
 N|Y|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
 Y|Y|${HOME}/.config|dunst|dunst
 Y|Y|${HOME}/.config|kitty|kitty

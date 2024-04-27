@@ -86,31 +86,35 @@ fi
 # └──────────────────────────────────────────────────────────┘
 
 # TLP
-echo "\033[0;33m[COPY]\033[0m (Configs/etc/tlp.conf) \033[0;33m-->\033[0m (/etc/)"
-sudo cp "${scrDir}/Configs/etc/tlp.conf" /etc/
+echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/tlp.conf) \033[0;33m-->\033[0m (/etc/)"
+sudo cp "../Configs/etc/tlp.conf" /etc/
 # echo "\033[0;33m[MASK]\033[0m \033[0;33m-->\033[0m (rfkill "service & socket" & power-profiles-daemon) for TLP"
 # sudo systemctl mask systemd-rfkill.service
 # sudo systemctl mask systemd-rfkill.socket
 # sudo systemctl mask power-profiles-daemon.service
 
 # Auto-cpufreq
-echo "\033[0;33m[COPY]\033[0m (Configs/etc/auto-cpufreq.conf) \033[0;33m-->\033[0m (/etc/)"
-sudo cp "${scrDir}/Configs/etc/auto-cpufreq.conf" /etc/
+echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/auto-cpufreq.conf) \033[0;33m-->\033[0m (/etc/)"
+sudo cp "../Configs/etc/auto-cpufreq.conf" /etc/
 
 # Grub-btrfsd
-echo "\033[0;33m[COPY]\033[0m (Configs/etc/systemd/system/grub-btrfsd.service) \033[0;33m-->\033[0m (/etc/systemd/system/)"
-sudo cp "${scrDir}/Configs/etc/systemd/system/grub-btrfsd.service" /etc/systemd/system/
+echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/systemd/system/grub-btrfsd.service) \033[0;33m-->\033[0m (/etc/systemd/system/)"
+sudo cp "../Configs/etc/systemd/system/grub-btrfsd.service" /etc/systemd/system/
 
 # Apparmor
-echo "\033[0;33m[ADD]\033[0m (Apparmor modules) \033[0;33m-->\033[0m (/etc/default/grub)"
+echo -e "\033[0;33m[ADD]\033[0m (Apparmor modules) \033[0;33m-->\033[0m (/etc/default/grub)"
 sudo sed -i "/^GRUB_CMDLINE_LINUX=/c\GRUB_CMDLINE_LINUX='lsm=landlock,lockdown,yama,apparmor,bqf'" /etc/default/grub
-echo "\033[0;33m[REGENERATE]\033[0m (GRUB) \033[0;33m-->\033[0m (After adding 'Aapparmor modules')"
+echo -e "\033[0;33m[REGENERATE]\033[0m (GRUB) \033[0;33m-->\033[0m (After adding 'Aapparmor modules')"
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 # TPM (tmux plugin manager)
-echo "\033[0;33m[CLONE]\033[0m (Tmux Plugin Manager) \033[0;33m-->\033[0m (~/.tmux/plugins/)"
+echo -e "\033[0;33m[CLONE]\033[0m (Tmux Plugin Manager) \033[0;33m-->\033[0m (~/.tmux/plugins/)"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # My personal nvim config
-echo "\033[0;33m[CLONE]\033[0m (My Neovim config) \033[0;33m-->\033[0m (~/.config/)"
-git clone https://github.com/Gl00ria/nvim.git ~/.config/
+echo -e "\033[0;33m[CLONE]\033[0m (My Neovim config) \033[0;33m-->\033[0m (~/.config/)"
+git clone https://github.com/Gl00ria/nvim.git ~/.config/nvim
+
+# copy extra vars to /etc/sudoers.d/
+echo -e "\033[0;33m[COPY]\033[0m (Extra Env Vars) \033[0;33m-->\033[0m (/etc/sudoers.d/)"
+sudo cp "../Configs/etc/sudoers.d/custom_env" /etc/sudoers.d/
