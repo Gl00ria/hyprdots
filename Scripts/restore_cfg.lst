@@ -8,7 +8,6 @@ Y|Y|${HOME}/.config|fastfetch|fastfetch
 Y|Y|${HOME}/.config|rofi|rofi
 Y|Y|${HOME}/.config/waybar|modules config.jsonc style.css theme.css|waybar
 Y|Y|${HOME}/.config/waybar|config.ctl|waybar
-Y|Y|${HOME}/.config|swaylock|swaylock-effects
 Y|Y|${HOME}/.config|wlogout|wlogout
 Y|Y|${HOME}|.bashrc|bash
 Y|Y|${HOME}/.config|bashrc|bash

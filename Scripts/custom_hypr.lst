@@ -117,7 +117,7 @@ bluez-cups                # CUPS printer backend for Bluetooth printers
 system-config-printer     # CPUS printer config tools & staus applet
 splix                     # CUPS drivers for (Samsung Printer Language) printers
 cups-filters
-foomatic-engine             #  generate print queues & handle jobs
+foomatic-db-engine          #  generate print queues & handle jobs
 foomatic-db    # collected knowledge about printers, drivers, and driver options
 foomatic-db-nonfree         # non-free ^^^^^^^^
 foomatic-db-gutenprint-ppds # simplified prebuilt ppd files
