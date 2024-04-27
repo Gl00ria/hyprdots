@@ -1,0 +1,10 @@
+  "disk": {
+    // "format": " {percentage_used}% ({free})",
+    // "format": "💿 {free}",
+    "format": " {free}",
+    "format-alt": " {percentage_used}% ({free})",
+    "tooltip": true,
+    "on-click-right": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'ncdu'",
+    // "on-click-right": "kitty --start-as=fullscreen --title all_is_kitty sh -c 'btop'",
+    "interval": 10
+  },

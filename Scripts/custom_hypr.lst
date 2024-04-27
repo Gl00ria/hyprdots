@@ -1,56 +1,3 @@
-# --------------------------------------------------- // System
-blueman                                                # bluetooth manager gui
-brightnessctl                                          # screen brightness control
-udiskie                                                # manage removable media
-
-# --------------------------------------------------- // Display Manager
-sddm                                                   # display manager for KDE plasma
-qt5-quickcontrols                                      # for sddm theme ui elements
-qt5-quickcontrols2                                     # for sddm theme ui elements
-qt5-graphicaleffects                                   # for sddm theme effects
-
-# --------------------------------------------------- // Window Manager
-hyprland                                               # wlroots-based wayland compositor
-dunst                                                  # notification daemon
-rofi-lbonn-wayland                                     # application launcher
-waybar                                                 # system bar
-swww                                                   # wallpaper
-swaylock-effects                                       # lock screen
-wlogout                                                # logout menu
-grimblast-git                                          # screenshot tool
-slurp                                                  # region select for screenshot/screenshare
-swappy                                                 # screenshot editor
-cliphist                                               # clipboard manager
-
-# --------------------------------------------------- // Dependencies
-polkit-gnome                                           # authentication agent
-xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
-python-pyamdgpuinfo                                    # for amd gpu info
-parallel                                               # for parallel processing
-jq                                                     # for json processing
-imagemagick                                            # for image processing
-qt5-imageformats                                       # for dolphin image thumbnails
-ffmpegthumbs                                           # for dolphin video thumbnails
-kde-cli-tools                                          # for dolphin file type defaults
-kservice5                                              # for "open with" menu in dolphin
-libnotify                                              # for notifications
-
-# --------------------------------------------------- // Theming
-nwg-look-bin                                           # gtk configuration tool
-qt5ct                                                  # qt5 configuration tool
-qt6ct                                                  # qt6 configuration tool
-kvantum                                                # svg based qt6 theme engine
-kvantum-qt5                                            # svg based qt5 theme engine
-qt5-wayland                                            # wayland support in qt5
-qt6-wayland                                            # wayland support in qt6
-
-# --------------------------------------------------- // Applications
-firefox                                                # browser
-kitty                                                  # terminal
-dolphin                                                # kde file manager
-ark                                                    # kde file archiver
-visual-studio-code-bin
-
 #╒═══════════════════════════════════════════════════════════╕
 #│                                                           │
 #│                    Gl00ria's Remix                        │
@@ -72,9 +19,9 @@ optimus-manager-qt
 # optimus-manager-qt-kde # install manully, otherwise would fail
 
 # --------------------------------------------------- // Security
-ufw                                     # ufw (Uncompleted Firewall) pkg
+ufw               # ufw (Uncompleted Firewall) pkg
 apparmor          # LSM (Linux Security Module), by providing MAC (Mandatory Access Control)
-audit                                   # apparmor req
+audit             # apparmor req
 # get desktop notifications on denied actions (for apparmor)
 python-notify2
 python-psutil
@@ -87,38 +34,31 @@ powertop
 # --------------------------------------------------- // Backup Utils
 timeshift
 grub-btrfs
-# --------------------------------------------------- // Shells
-zsh
-eza|zsh                                  # file lister for zsh
-oh-my-zsh-git|zsh                        # plugin manager for zsh
-zsh-autosuggestions|zsh
-zsh-fast-syntax-highlighting|zsh
-starship|zsh                             # customizable shell prompt
-fastfetch                                # system information fetch tool
+deja-dup
 
 # --------------------------------------------------- // Pkg management
-reflector                                # find pacman's fastest merrors --> alias == True
-pacman-contrib                           # for system update check
-pkgfile                                  # pacman (.files) metadat explorer
-rebuild-detector                         # detects which pkg need to be rebuilt
-python-packaging                         # utils for python-packaging
+reflector                     # find pacman's fastest merrors --> alias == True
+pacman-contrib                # for system update check
+pkgfile                       # pacman (.files) metadat explorer
+rebuild-detector              # detects which pkg need to be rebuilt
+python-packaging              # utils for python-packaging
 
 # --------------------------------------------------- // Networking
-ntp                                      # Network Time Protocol
-dnsmasq                                  # DNS forwarder & DHCP server
-dhclient                                 # DHCP client
-ethtool                                  # util to control netwrok drivers & hardware
-modemmanager                             # mobile broadband modem management service
-networkmanager                           # network manager
-network-manager-applet                   # network manager system tray utility
-nss-mdns                                 # host-name resolution via (mDNS)
-net-tools                                # host-name resolution via (mDNS)
-openssh                                  # come on :)
-b43-fwcutter                             # firmware extractor for (b43) kernel module
-iwd                                      # internet wireless daemon
-wpa_supplicant                           # util for WPA wirless network
-openvpn                                  # VPN
-networkmanager-openvpn                   # OpenVPN plugin for 'networkmanager'
+ntp                                 # Network Time Protocol
+dnsmasq                             # DNS forwarder & DHCP server
+dhclient                            # DHCP client
+ethtool                             # util to control netwrok drivers & hardware
+modemmanager                        # mobile broadband modem management service
+networkmanager                      # network manager
+network-manager-applet              # network manager system tray utility
+nss-mdns                            # host-name resolution via (mDNS)
+net-tools                           # host-name resolution via (mDNS)
+openssh                             # come on :)
+b43-fwcutter                        # firmware extractor for (b43) kernel module
+iwd                                 # internet wireless daemon
+wpa_supplicant                      # util for WPA wirless network
+openvpn                             # VPN
+networkmanager-openvpn              # OpenVPN plugin for 'networkmanager'
 
 # --------------------------------------------------- // File System Support
 ntfs-3g                                  # NTFS filesystem driver and utilities
@@ -140,6 +80,7 @@ gst-plugin-pipewire                      # pipewire gstreamer client
 # --------------------------------------------------- // bluetooth
 bluez                                    # bluetooth protocol stack
 bluez-utils                              # bluetooth utility cli
+blueman                                  # bluetooth manager gui
 
 # --------------------------------------------------- // Archive utils
 p7zip
@@ -147,9 +88,9 @@ unrar
 unzip
 
 # --------------------------------------------------- // System Info
-nvtop                                    # AMD, NVIDIA & INTEL) process monitor
-ncdu                                     # disk usage analyzer
-btop                                     # (CPU, memory, disks, netword & processes) monitor config == True
+nvtop         # AMD, NVIDIA & INTEL) process monitor
+ncdu          # disk usage analyzer
+btop          # (CPU, memory, disks, netword & processes) monitor config == True
 
 # --------------------------------------------------- // Git
 git
@@ -159,21 +100,127 @@ git-delta|git                            # syntax-highlihgting pager
 # --------------------------------------------------- // Editors
 vim                                      # come on :)
 neovim                                   # come on :)
-clang|neovim                             # required for treesitter parsers
-python-pynvim|neovim                     # neovim python's support
-neovide|neovim                           # C00L GUI for neovim
+clang                                    # required for treesitter parsers
+python-pynvim                            # neovim python's support
+neovide                                  # C00L GUI for neovim
 zathura                                  # terminal pdf reader
-zathura-pdf-poppler|zathura
+zathura-pdf-poppler
+
+# --------------------------------------------------- // Printer/Scanner Support
+hplip           # Drivers for (DeskJet, OfficeJet, Photosmart, Busseniss Inject)
+gutenprint      # printer drivers for POSIX sys
+print-manager   # managing pring jobs & printers
+libcups
+cups
+cups-browsed              # browse the network for remote cups
+bluez-cups                # CUPS printer backend for Bluetooth printers
+system-config-printer     # CPUS printer config tools & staus applet
+splix                     # CUPS drivers for (Samsung Printer Language) printers
+cups-filters
+foomatic-engine             #  generate print queues & handle jobs
+foomatic-db    # collected knowledge about printers, drivers, and driver options
+foomatic-db-nonfree         # non-free ^^^^^^^^
+foomatic-db-gutenprint-ppds # simplified prebuilt ppd files
+foomatic-db-ppds            # PPDs from printer manufacturers
+foomatic-db-nonfree-ppds    # non-free ^^^^^^^^^^^^^
+ghostscript                 #  interpreter for 'PostScript' language
+
+# --------------------------------------------------- // Shells
+zsh
+oh-my-zsh-git                    # plugin manager for zsh
+zsh-autosuggestions              # plugin
+zsh-fast-syntax-highlighting     # plugin
+starship                         # customizable shell prompt
+fastfetch                        # system information fetch tool
+zoxide                           # cd's alternative --> alias = True
+eza                              # ls's alternative --> alias == True
+bat                              # cat's alternative --> alias == True
+trash-cli                        # rm's alternative --> alias == True
+ripgrep                          # grep's alternative --> alias == True
+fd                               # find's alternative --> alias == True
+fzf                              # fuzzy finder --> alias == True
+wget                             # come on :)
+curl                             # come on :)
+yt-dlp                           # download from YouTube --> alias == True
+mlocate                          # mergeing (locate/updatedb)
+tldr                             # :) for YOU, ME & US
+rsync                            # the fantastical fantasticoo
+xdg-user-dirs                    # manage user dir (~/Music/ ~/Desktop/ etc...)
+xdg-utils
+usb_modeswitch                   # activating swichable USB devices
+tmux                             # terminal multiplexer, config == True
+brightnessctl                    # screen brightness control
+
+# --------------------------------------------------- // GUI Apps/Utils
+visual-studio-code-bin           # come on :), config == True
+kitty                            # terminal emulator, config == True
+bluemail                         # email client
+firefox                          # browser
+dolphin                          # kde file manager
+qt5-imageformats                 # for dolphin image thumbnails
+ffmpegthumbs                     # for dolphin video thumbnails
+kde-cli-tools                    # for dolphin file type defaults
+kservice5                        # for "open with" menu in dolphin
+ark                              # kde file archiver
+libreoffice-fresh                # Microsoft Offics's alternative
+vmware-workstation               # VM
+rhythmbox                        # music player
+gparted                          # come on :)
+gwenview                         # image viewer
+
+# --------------------------------------------------- // Desktop Integration
+accountsservice        # d-bus interface for user account query & implementation
+gst-libav              # multimedia graph framework (libav plugin)
+libdvdcss              # DVD decrybtion
+libgsf                 # I/O lib for structured file format
+libopenraw             # decoding raw files
+
+# --------------------------------------------------- // Misc
+udiskie                         # manage removable media
+polkit-gnome                    # authentication agent
+xdg-desktop-portal-hyprland     # xdg desktop portal for hyprland
+parallel                        # for parallel processing
+jq                              # for json processing
+imagemagick                     # for image processing
+libnotify                       # for notifications
+
+# --------------------------------------------------- // Theming
+nwg-look-bin                                        # gtk configuration tool
+qt5ct                                               # qt5 configuration tool
+qt6ct                                               # qt6 configuration tool
+kvantum                                             # svg based qt6 theme engine
+kvantum-qt5                                         # svg based qt5 theme engine
+qt5-wayland                                         # wayland support in qt5
+qt6-wayland                                         # wayland support in qt6
+
+# --------------------------------------------------- // Login Manager
+sddm                                            # display manager for KDE plasma
+qt5-quickcontrols                               # for sddm theme ui elements
+qt5-quickcontrols2                              # for sddm theme ui elements
+qt5-graphicaleffects                            # for sddm theme effects
+
+# --------------------------------------------------- // Window Manager
+hyprland                         # wlroots-based wayland compositor, config == True
+dunst                            # notification daemon, config == True
+rofi-lbonn-wayland               # application launcher, config == True
+waybar                           # system bar, config == True
+swww                             # wallpaper, config == True
+hyprlock                         # lock screen, config == True
+wlogout                          # logout menu, config == True
+grimblast-git                    # screenshot tool
+slurp                            # region select for screenshot/screenshare
+swappy                           # screenshot editor
+cliphist                         # clipboard manager
 
 # --------------------------------------------------- // Fonts
 adobe-source-code-pro-fonts
-freetype2                                # font reserization lib
-gsfonts                                  # base 32 font set
-ttf-liberation                           # Arial, Times New Roman etc..
-ttf-opensans                             # Sans-serif
-ttf-victor-mono-nerd|waybar dunst kitty  # used with (waybar, dunst, neovide, kitty)
-ttf-material-design-icons-git|hyprland
-ttf-maple|visual-studio-code-bin
+freetype2                            # font reserization lib
+gsfonts                              # base 32 font set
+ttf-liberation                       # Arial, Times New Roman etc..
+ttf-opensans                         # Sans-serif
+ttf-victor-mono-nerd                 # for (hyprlock, waybar, dunst, neovide, kitty)
+ttf-material-design-icons-git
+ttf-maple                            # for visual-studio-code-bin
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji

@@ -5,3 +5,5 @@ ufw
 apparmor
 tlp
 auto-cpufreq
+vmware-networks
+swayosd-libinput-backend

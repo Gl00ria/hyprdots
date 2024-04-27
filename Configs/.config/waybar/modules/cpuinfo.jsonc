@@ -1,5 +1,6 @@
     "custom/cpuinfo": {
         "exec": " cpuinfo.sh",
+        "exec": "~/.config/hypr/scripts/cpuinfo.sh",
         "return-type": "json",
         "format": "{}",
         "rotate": ${r_deg},

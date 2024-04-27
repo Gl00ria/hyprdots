@@ -17,7 +17,7 @@
         },
         "return-type": "json",
         "exec-if": "which dunstctl",
-        "exec": "notifications.py",
+        "exec": "~/.config/hypr/scripts/notifications.py",
         "on-click": "sleep 0.1 && dunstctl history-pop",
         "on-click-middle": "dunstctl history-clear",
         "on-click-right": "dunstctl close-all",

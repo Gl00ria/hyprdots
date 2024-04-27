@@ -47,8 +47,8 @@ fi
 
 # set shell
 if [[ "$(grep "/${USER}:" /etc/passwd | awk -F '/' '{print $NF}')" != "${myShell}" ]]; then
-  echo -e "\033[0;32m[SHELL]\033[0m changing shell to ${myShell}..."
+  echo -e "\033[0;32m[SHELL]\033[0m changing shell to \033[0;32m${myShell}\033[0m..."
   chsh -s "$(which "${myShell}")"
 else
-  echo -e "\033[0;33m[SKIP]\033[0m ${myShell} is already set as shell..."
+  echo -e "\033[0;33m[SKIP]\033[0m \033[0;33m${myShell}\033[0m is already set as shell..."
 fi

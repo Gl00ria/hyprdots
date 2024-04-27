@@ -1,24 +1,57 @@
-hyde-cli-git                                          # cli tool to manage hyde
-hyprpicker                                            # color picker
-pokemon-colorscripts-git                              # display pokemon sprites
-code                                                  # ide text editor
-cava                                                  # audio visualizer
-# emote                                               # emoji picker
-nushell
-ttf-fantasque-nerd                                    # optional for (neovide kitty)
-ttf-firacode-nerd                                     # optional for (neovide kitty)
-ttf-iosevka-nerd                                      # optional (neovide)
-ttf-jetbrains-nerd                                    # optional (neovide)
-ttf-cascadia-code-nerd                                # optional (waybar dunst neovide kitty)
+# --------------------------------------------------- // GUI Apps/Utils
+alacritty                       # terminal emulator, config == True
+thunderbird                     # email client
+brave-bin                       # browser
+# hyprpicker                    # color picker
+# code                          # ide text editor
+# emote                         # emoji picker
+gedit                           # editor
+virtualbox                      # Come on :)
+foxitreader                     # PDF reader
+teamviewer                      # GUI remote control
+anydesk-bin                     # GUI remote control
+rustdesk-bin                    # GUI remote control
+lollypop                        # music player
+drawio-desktop-bin              # diagram drawing
+cpupower-gui                    # CPU frequency limits
+missioncenter                   # monitor (CPU, GPU, network, disk & memory)
+haruna                          # video player
+konsole                         # terminal support witin 'dolphin' (F4)
+dolphin-plugins
+# --------------------------------------------------- // Shells
+pokemon-colorscripts-git      # display pokemon sprites
+cava                            # audio visualizer
+nushell                         # shell
+speedtest-cli                   # internet bandwidth test
+tokie                           # count LOC
+hyde-cli-git                    # cli tool to manage hyde
+yazi                            # terminal file explorer
+# --------------------------------------------------- // Pkg management
+downgrade
+# --------------------------------------------------- // Desktop Integration
+gst-plugins-bad                 # multimedia graph framework (bad plugin)
+gst-plugins-ugly                # multimedia graph framework (ugly plugin)
+poppler-glib                    # poppler glib bidings
+# --------------------------------------------------- // Audio
+alsa-firmware
+alsa-plugins
+alsa-utils
+# --------------------------------------------------- // Fonts
+ttf-fantasque-nerd           # optional for (neovide kitty)
+ttf-firacode-nerd            # optional for (neovide kitty)
+ttf-iosevka-nerd             # optional (neovide)
+ttf-jetbrains-nerd           # optional (neovide)
+ttf-cascadia-code-nerd       # optional (waybar dunst neovide kitty)
+ttf-hack-nerd                # optional (neovide)
 ttf-bitstream-vera
 cantarell-fonts
 ttf-dejavu
-# downgrade
-# gamemode
-# gamescope
-# libinput-gestures
-# gestures
-# ttf-hack-nerd|neovide
-# alsa-firmware
-# alsa-plugins
-# alsa-utils
+# --------------------------------------------------- // Misc
+python-pyamdgpuinfo          # for amd gpu info
+gamemode
+gamescope
+spotify                      # config == True
+spicetify-cli
+steam
+libinput-gestures            # config == True
+gestures

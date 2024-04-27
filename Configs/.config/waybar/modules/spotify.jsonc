@@ -1,5 +1,5 @@
     "custom/spotify": {
-        "exec": "mediaplayer.py --player spotify",
+        "exec": "~/.config/hypr/scripts/mediaplayer.py --player spotify",
         "format": " {}",
         "rotate": ${r_deg},
         "return-type": "json",

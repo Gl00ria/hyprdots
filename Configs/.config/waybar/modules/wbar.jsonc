@@ -2,7 +2,7 @@
         "format": "{}", //    //
         "rotate": ${r_deg},
         "exec": "echo ; echo  switch bar //  dock",
-        "on-click": "wbarconfgen.sh n",
+        "on-click": "~/.config/hypr/scripts/wbarconfgen.sh n",
         "on-click-right": "wbarconfgen.sh p",
         "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
         "interval" : 86400,

@@ -1,9 +1,9 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "CaskaydiaCove Nerd Font";
     font-weight: bold;
-    font-size: 10px;
+    font-size: 13px;
     min-height: 10px;
 }
 
@@ -16,7 +16,7 @@ window#waybar {
 tooltip {
     background: @main-bg;
     color: @main-fg;
-    border-radius: 7px;
+    border-radius: 10px;
     border-width: 0px;
 }
 
@@ -24,12 +24,12 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     margin-left: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     margin-right: 0px;
     color: @main-fg;
     animation: ws_normal 20s ease-in-out 1;
@@ -38,10 +38,10 @@ tooltip {
 #workspaces button.active {
     background: @wb-act-bg;
     color: @wb-act-fg;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
+    margin-left: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 4px;
     animation: ws_active 20s ease-in-out 1;
     transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -57,12 +57,12 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    border-radius: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     margin-left: 0px;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
     margin-right: 0px;
     color: @wb-color;
     animation: tb_normal 20s ease-in-out 1;
@@ -71,10 +71,10 @@ tooltip {
 #taskbar button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
+    margin-left: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 4px;
     animation: tb_active 20s ease-in-out 1;
     transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -93,6 +93,7 @@ tooltip {
 #clock,
 #custom-cpuinfo,
 #cpu,
+#disk,
 #custom-gpuinfo,
 #idle_inhibitor,
 #custom-keybindhint,
@@ -121,9 +122,9 @@ tooltip {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
-    margin: 4px 0px 4px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 5px 0px 5px 0px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #workspaces,
@@ -132,37 +133,37 @@ tooltip {
 }
 
 #custom-r_end {
-    border-radius: 0px 21px 21px 0px;
-    margin-right: 9px;
-    padding-right: 3px;
+    border-radius: 0px 28px 28px 0px;
+    margin-right: 12px;
+    padding-right: 4px;
 }
 
 #custom-l_end {
-    border-radius: 21px 0px 0px 21px;
-    margin-left: 9px;
-    padding-left: 3px;
+    border-radius: 28px 0px 0px 28px;
+    margin-left: 12px;
+    padding-left: 4px;
 }
 
 #custom-sr_end {
     border-radius: 0px;
-    margin-right: 9px;
-    padding-right: 3px;
+    margin-right: 12px;
+    padding-right: 4px;
 }
 
 #custom-sl_end {
     border-radius: 0px;
-    margin-left: 9px;
-    padding-left: 3px;
+    margin-left: 12px;
+    padding-left: 4px;
 }
 
 #custom-rr_end {
-    border-radius: 0px 7px 7px 0px;
-    margin-right: 9px;
-    padding-right: 3px;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 12px;
+    padding-right: 4px;
 }
 
 #custom-rl_end {
-    border-radius: 7px 0px 0px 7px;
-    margin-left: 9px;
-    padding-left: 3px;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 12px;
+    padding-left: 4px;
 }

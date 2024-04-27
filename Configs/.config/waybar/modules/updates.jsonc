@@ -1,9 +1,9 @@
     "custom/updates": {
-        "exec": "systemupdate.sh",
+        "exec": "~/.config/hypr/scripts/systemupdate.sh",
         "return-type": "json",
-        "format": "{}",
+        "format": "󱧘 {}",
         "rotate": ${r_deg},
-        "on-click": "systemupdate.sh up",
+        "on-click": "~/.config/hypr/scripts/systemupdate.sh up",
         "interval": 86400, // once every day
         "tooltip": true,
         "signal": 20,
