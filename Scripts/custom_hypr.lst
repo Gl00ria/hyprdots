@@ -27,7 +27,7 @@ python-notify2
 python-psutil
 
 # --------------------------------------------------- // Power Management
-tlp
+# tlp
 auto-cpufreq
 powertop
 
@@ -186,6 +186,7 @@ parallel                        # for parallel processing
 jq                              # for json processing
 imagemagick                     # for image processing
 libnotify                       # for notifications
+rmlint                          # finds space waste and other broken things on your filesystem
 
 # --------------------------------------------------- // Theming
 nwg-look-bin                                        # gtk configuration tool
@@ -205,7 +206,7 @@ qt5-graphicaleffects                            # for sddm theme effects
 # --------------------------------------------------- // Window Manager
 hyprland                         # wlroots-based wayland compositor, config == True
 dunst                            # notification daemon, config == True
-rofi-lbonn-wayland               # application launcher, config == True
+rofi-lbonn-wayland-git           # application launcher, config == True
 waybar                           # system bar, config == True
 swww                             # wallpaper, config == True
 hyprlock                         # lock screen, config == True
@@ -214,6 +215,7 @@ grimblast-git                    # screenshot tool
 slurp                            # region select for screenshot/screenshare
 swappy                           # screenshot editor
 cliphist                         # clipboard manager
+swayosd-git                      # common actions like volume and capslock
 
 # --------------------------------------------------- // Fonts
 adobe-source-code-pro-fonts

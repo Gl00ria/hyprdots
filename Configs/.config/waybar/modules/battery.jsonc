@@ -1,14 +1,19 @@
     "battery": {
         "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
+            "good": 90,
+            "warning": 50,
+            "critical": 30
         },
         "format": "{icon} {capacity}%",
         "rotate": ${r_deg},
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        // control external HDMI-1
+        // get monitor ID (ddcutil capabilities | grep "Feature: 10")
+        // get monitor max/min value (ddcutil getvcp 10)
+        "on-click": "ddcutil setvcp 10 10",
+        "on-click-right": "ddcutil setvcp 10 60",
+        "on-scroll-up": "ddcutil setvcp 10 + 10",
+        "on-scroll-down": "ddcutil setvcp 10 - 10",
     },
-

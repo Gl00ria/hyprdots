@@ -32,7 +32,7 @@ if pkg_installed firefox; then
     sleep 1
     FoxRel=$(find ~/.mozilla/firefox -maxdepth 1 -type d -name "*.default-release" | head -1)
   else
-    BkpDir="${HOME}/.config/cfg_backups/$(date +'%y%m%d_%Hh%Mm%Ss')_apps"
+    BkpDir="${HOME}/.config/cfg_backups/$(date +'%H:%M:%S_%d-%m-%Y')_apps"
     mkdir -p "${BkpDir}"
     cp -r ~/.mozilla/firefox "${BkpDir}"
   fi

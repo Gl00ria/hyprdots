@@ -90,7 +90,7 @@ if pkg_installed systemd && nvidia_detect && [ $(bootctl status 2>/dev/null | aw
       sudo sed -i "/^options/c${sdopt} quiet splash nvidia_drm.modeset=1" ${imgconf}
     done
   else
-    echo -e "\033[0;33m[SKIP]\033[0m systemd-boot is already configured..."
+    echo -e "\033[0;33m[SKIP]\033[0m \033[0;33m-->\033[0m systemd-boot is already configured..."
   fi
 fi
 
@@ -108,5 +108,5 @@ if [ -f /etc/pacman.conf ] && [ ! -f /etc/pacman.conf.t2.bkp ]; then
   sudo pacman -Fy
 
 else
-  echo -e "\033[0;33m[SKIP]\033[0m pacman is already configured..."
+  echo -e "\033[0;33m[SKIP]\033[0m \033[0;33m-->\033[0m pacman is already configured..."
 fi

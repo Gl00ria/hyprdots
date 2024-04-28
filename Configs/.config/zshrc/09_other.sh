@@ -8,6 +8,7 @@ alias q="exit"
 alias x="exit"
 alias c="clear"
 alias tree="tree -a"
+alias rmlint="rmlint -g ."
 
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"

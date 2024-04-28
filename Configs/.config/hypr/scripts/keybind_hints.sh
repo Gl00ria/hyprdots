@@ -52,6 +52,7 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏XF86MonBrightnessDown             Brightness DOWN
 ━━━━━━━━━━━━━━━━━━━━━━━━━━ Eye Candy ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏󰖳 + 󰘶 + 󰰥                   Select Theme
+󰌓 ▏󰖳 + 󰘶 + 󰯬                   Wallbash Mode
 󰌓 ▏󰖳 + 󰘶 + 󰰐                   Change Rofi's Style
 󰌓 ▏󰖳 + 󰘶 + 󰰮                   Select Wallpaper
 󰌓 ▏󰖳 + 󰘶 + 󰰟                   Random Wallpaper
@@ -69,7 +70,7 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏󰖳 + CTRL + 󰯻                Fullscreen(Hides waybar)
 󰌓 ▏󰖳 + CTRL + 󰰙                Toggle Pseudo
 󰌓 ▏󰖳 + CTRL + 󰰢                Toggle Split
-󰌓 ▏󰖳 + CTRL + 󱁐                Toggle Floating
+󰌓 ▏󰖳 + 󰰙                       Toggle Floating
 󰌓 ▏󰖳 + CTRL + 󰯾                Toggle Group
 󰌓 ▏ALT + TAB                   Cycle Focus
 󰌓 ▏󰖳 + CTRL + 󰯲                Center Window
@@ -287,6 +288,13 @@ case "$selected" in
     killall rofi
   else
     ~/.config/hypr/scripts/themeselect.sh
+  fi
+  ;;
+"Wallbash Mode")
+  if pgrep -x "rofi" >/dev/null; then
+    killall rofi
+  else
+    ~/.config/hypr/scripts/wallbashtoggle.sh -m
   fi
   ;;
 "Change Rofi's Style")

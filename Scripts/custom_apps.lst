@@ -19,7 +19,7 @@ haruna                          # video player
 konsole                         # terminal support witin 'dolphin' (F4)
 dolphin-plugins
 # --------------------------------------------------- // Shells
-pokemon-colorscripts-git      # display pokemon sprites
+pokemon-colorscripts-git        # display pokemon sprites
 cava                            # audio visualizer
 nushell                         # shell
 speedtest-cli                   # internet bandwidth test
@@ -48,10 +48,10 @@ cantarell-fonts
 ttf-dejavu
 # --------------------------------------------------- // Misc
 python-pyamdgpuinfo          # for amd gpu info
+spotify                      # config == True
+libinput-gestures            # config == True
 gamemode
 gamescope
-spotify                      # config == True
 spicetify-cli
 steam
-libinput-gestures            # config == True
 gestures

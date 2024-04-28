@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+
 #// Check if wlogout is already running
 
 if pgrep -x "wlogout" > /dev/null
@@ -7,6 +8,7 @@ then
     pkill -x "wlogout"
     exit 0
 fi
+
 
 #// set file variables
 
@@ -52,7 +54,7 @@ export fntSize=$(( y_mon * 2 / 100 ))
 
 #// detect wallpaper brightness
 
-source "${cacheDir}/wall.dcol"
+[ -f "${cacheDir}/wall.dcol" ] && source "${cacheDir}/wall.dcol"
 [ "${dcol_mode}" == "dark" ] && export BtnCol="white" || export BtnCol="black"
 
 
@@ -70,5 +72,3 @@ wlStyle="$(envsubst < $wlTmplt)"
 #// launch wlogout
 
 wlogout -b "${wlColms}" -c 0 -r 0 -m 0 --layout "${wLayout}" --css <(echo "${wlStyle}") --protocol layer-shell
-
-

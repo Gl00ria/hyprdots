@@ -20,7 +20,7 @@ if [ ! -f "${CfgLst}" ] || [ ! -d "${CfgDir}" ]; then
   exit 1
 fi
 
-BkpDir="${HOME}/.config/cfg_backups/$(date +'%y%m%d_%Hh%Mm%Ss')${ThemeOverride}"
+BkpDir="${HOME}/.config/cfg_backups/$(date +'%H:%M:%S_%d-%m-%Y')${ThemeOverride}"
 
 if [ -d "${BkpDir}" ]; then
   echo "ERROR: ${BkpDir} exists!"

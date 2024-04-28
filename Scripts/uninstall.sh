@@ -48,7 +48,7 @@ if [ ! -f "${CfgLst}" ]; then
   exit 1
 fi
 
-BkpDir="${HOME}/.config/cfg_backups/$(date +'%y%m%d_%Hh%Mm%Ss')_remove"
+BkpDir="${HOME}/.config/cfg_backups/$(date +'%H:%M:%S_%d-%m-%Y')_remove"
 mkdir -p "${BkpDir}"
 
 cat "${CfgLst}" | while read lst; do
