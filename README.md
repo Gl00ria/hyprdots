@@ -1,3 +1,4 @@
+## Gl00ria's Remix...
 ###### _<div align="right"><sub>// design by t2</sub></div>_
 
 <div align="center">
@@ -22,7 +23,7 @@ https://github.com/prasanthrangan/hyprdots/assets/106020512/7f8fadc8-e293-4482-a
 
 ## Installation
 
-The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
+The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) and [EndeavourOS](https://github.com/endeavouros-team) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
 While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
 
 > [!IMPORTANT]
@@ -36,7 +37,7 @@ To install, execute the following commands:
 
 ```shell
 pacman -Sy git
-git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
+git clone --depth 1 https://github.com/Gl00ria/hyprdots ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 ```
@@ -162,26 +163,36 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 
 | Keys                                                                                                     | Action                                               |
 | :------------------------------------------------------------------------------------------------------- | :--------------------------------------------------- |
-| <kbd>Super</kbd> + <kbd>Q</kbd><br><kbd>Alt</kbd> + <kbd>F4</kbd>                                        | Close focused window                                 |
-| <kbd>Super</kbd> + <kbd>Del</kbd>                                                                        | Kill Hyprland session                                |
-| <kbd>Super</kbd> + <kbd>W</kbd>                                                                          | Toggle the window between focus and float            |
-| <kbd>Super</kbd> + <kbd>G</kbd>                                                                          | Toggle the window between focus and group            |
-| <kbd>Alt</kbd> + <kbd>Enter</kbd>                                                                        | Toggle the window between focus and fullscreen       |
-| <kbd>Super</kbd> + <kbd>L</kbd>                                                                          | Launch lock screen                                   |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>                                                       | Toggle pin on focused window                         |
-| <kbd>Super</kbd> + <kbd>Backspace</kbd>                                                                  | Launch logout menu                                   |
-| <kbd>Ctrl</kbd> + <kbd>Esc</kbd>                                                                         | Toggle waybar                                        |
-| <kbd>Super</kbd> + <kbd>T</kbd>                                                                          | Launch terminal emulator (kitty)                     |
-| <kbd>Super</kbd> + <kbd>E</kbd>                                                                          | Launch file manager (dolphin)                        |
-| <kbd>Super</kbd> + <kbd>C</kbd>                                                                          | Launch text editor (vscode)                          |
-| <kbd>Super</kbd> + <kbd>F</kbd>                                                                          | Launch web browser (firefox)                         |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd>                                                      | Launch system monitor (htop/btop or fallback to top) |
-| <kbd>Super</kbd> + <kbd>A</kbd>                                                                          | Launch application launcher (rofi)                   |
-| <kbd>Super</kbd> + <kbd>Tab</kbd>                                                                        | Launch window switcher (rofi)                        |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd>                                                       | Launch file explorer (rofi)                          |
-| <kbd>F10</kbd>                                                                                           | Toggle audio mute                                    |
-| <kbd>F11</kbd>                                                                                           | Decrease volume                                      |
-| <kbd>F12</kbd>                                                                                           | Increase volume                                      |
+| <kbd>Super</kbd> + <kbd>H</kbd><br>                                        | Keybind Hint                |
+| <kbd>Super</kbd> + <kbd>Del</kbd>                                          | Kill Hyprland session       |
+| <kbd>Super</kbd> + <kbd>K</kbd>                                            | Kitty                       |
+| <kbd>Super</kbd> + <kbd>F</kbd>                                            | Firefox                     |
+| <kbd>Super</kbd> + <kbd>E</kbd>                                            | Dolphin                     |
+| <kbd>ALT</kbd> + <kbd>Space</kbd>                                          | App Launcher                |
+| <kbd>Super</kbd> + <kbd>Tab</kbd>                                          | List Oppened Apps           |
+| <kbd>Super</kbd> + <kbd>L</kbd>                                            | Lock Screen                 |
+| <kbd>Super</kbd> + <kbd>R</kbd>                                            | Browse File System          |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>                         | Open Clipboard              |
+| <kbd>Super</kbd> + <kbd>M</kbd>                                            | Music Player (Rhythmbox)    |
+| <kbd>Super</kbd> + <kbd>W</kbd>                                            | Toggle Waybar               |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>                          | Open Btop                         |
+| <kbd>Print</kbd>                                                           | Screenshot (Current Monitor)      |
+| <kbd>Shift</kbd> + <kbd>Print</kbd>                                        | Screenshot (Select Region)        |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Print</kbd>                        | Screenshot (All Monitors)         |
+| <kbd>Shit</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd>                            | Game Mode, Disable Hypr Effexts   |
+| <kbd>Shit</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd>                            | Change Keyboard Layout            |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>                         | Toggle Pin on Focused Window      |
+| <kbd>XF86AudioMute</kbd>                                                   | Toggle Mute (Speaker)             |
+| <kbd>XF86AudioMicMute</kbd>                                                | Toggle Mute (Mic)                 |
+| kbd>XF86AudioLowerVolume</kbd>                                             | Decrease Volume (Knob, in my case)|
+| kbd>XF86AudioRaiseVolume</kbd>                                             | Increase Volume (Knob, in my case)|
+| kbd>XF86AudioPlay</kbd>                                                    | Play (Knob, in my case)           |
+| kbd>XF86AudioPause</kbd>                                                   | Pause (Knob, in my case)          |
+| kbd>XF86AudioNext</kbd>                                                    | Play-Next (Knob, in my case)      |
+| kbd>XF86AudioPrev</kbd>                                                    | Play-Prev (Knob, in my case)      |
+| kbd>XF86MonBrightnessUp</kbd>                                              | Brightness UP (Knob, in my case)  |
+| kbd>XF86MonBrightnessDown</kbd>                                            | Brightness Down (Knob, in my case)|
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>                         | Select Theme      |
 | <kbd>Super</kbd> + <kbd>P</kbd>                                                                          | Partial screenshot capture                           |
 | <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd>                                                        | Partial screenshot capture (frozen screen)           |
 | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>                                                         | Monitor screenshot capture                           |
