@@ -50,6 +50,8 @@ ttf-dejavu
 python-pyamdgpuinfo          # for amd gpu info
 spotify                      # config == True
 libinput-gestures            # config == True
+wlr-randr                    # configure displays in Wayland
+compositors
 gamemode
 gamescope
 spicetify-cli
