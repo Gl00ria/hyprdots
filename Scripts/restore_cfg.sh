@@ -3,6 +3,11 @@
 #|--/ /-| Script to restore hyde configs |--/ /-|#
 #|-/ /--| Prasanth Rangan                |-/ /--|#
 #|/ /---+--------------------------------+/ /---|#
+# ┌                                                          ┐
+# │                                                          │
+# │                    Edited by @Gl00ria                    │
+# │                                                          │
+# └                                                          ┘
 
 scrDir=$(dirname "$(realpath "$0")")
 source "${scrDir}/global_fn.sh"

@@ -3,8 +3,11 @@
 #|--/ /-| Script to enable early loading for nvidia drm |--/ /-|#
 #|-/ /--| Prasanth Rangan                               |-/ /--|#
 #|/ /---+-----------------------------------------------+/ /---|#
-
-# WARN: modified to work with (dracut)
+# ┌                                                          ┐
+# │                                                          │
+# │                    Edited by @Gl00ria                    │
+# │                                                          │
+# └                                                          ┘
 if [ $(lspci -k | grep -A 2 -E "(VGA|3D)" | grep -i nvidia | wc -l) -gt 0 ]; then
   if [ -x "$(command -v dracut)" ]; then
     ### dracut

@@ -223,7 +223,8 @@ freetype2                            # font reserization lib
 gsfonts                              # base 32 font set
 ttf-liberation                       # Arial, Times New Roman etc..
 ttf-opensans                         # Sans-serif
-ttf-victor-mono-nerd                 # for (hyprlock, waybar, dunst, neovide, kitty)
+ttf-victor-mono-nerd                 # for (hyprlock, dunst, neovide, kitty)
+ttf-cascadia-code-nerd               # for (waybar)
 ttf-material-design-icons-git
 ttf-maple                            # for visual-studio-code-bin
 noto-fonts

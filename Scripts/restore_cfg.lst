@@ -18,6 +18,8 @@ Y|Y|${HOME}/.config|btop|btop
 Y|Y|${HOME}|.gitconfig|git
 Y|Y|${HOME}/.config|lazygit|lazygit
 Y|Y|${HOME}/.config|bat|bat
+Y|Y|${HOME}/.config|zathura|zathura
+Y|Y|${HOME}/.config|yazi|yazi
 Y|Y|${HOME}|.tmux.conf|tmux
 Y|Y|${HOME}|.editorconfig|neovim
 Y|Y|${HOME}/.config/autostart|apparmor-notify.desktop|apparmor

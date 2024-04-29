@@ -25,21 +25,18 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏󰖳 + 󰯻                              Firefox
 󰌓 ▏󰖳 + 󰯸                              Dolphin
 󰌓 ▏ALT + 󱁐                          App Launcher
-󰌓 ▏󰖳 + Tab                        List Opened Apps
 󰌓 ▏󰖳 + 󰰍                             Lookscreen
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Utils ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏󰖳 + 󰰟                          Browse File System
+󰌓 ▏󰖳 + Tab                        List Opened Apps
 󰌓 ▏󰖳 + 󰘶  + 󰰫                       Open Clipboard
 󰌓 ▏󰖳 + 󰰐                              Rhythmbox
-󰌓 ▏󰖳 + 󰰮                             Toggle Waybar
-󰌓 ▏󰖳 + 󰯾                            Toggle gBar
 󰌓 ▏CTRL + ALT + Delete                Open btop
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Utils ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏Print                         Screenshot (Current Monitor)
 󰌓 ▏󰘶 + Print                     Screenshot (Select Region)
 󰌓 ▏CTRL + ALT + Print            Screenshot (All Monitors)
 󰌓 ▏󰘶 + ALT + 󰯾                   Game Mode, Disble Hypr Effects
 󰌓 ▏󰘶 + ALT + 󰰊                   Change Keyboard Layout
-󰌓 ▏󰖳 + 󰘶 + 󰰙                     Toggle Pin On Focused Window
 󰌓 ▏󱊴 & XF86AudioMute                 Toggle Mute (Speaker)
 󰌓 ▏XF86AudioMicMute                  Toggle Mute (Mic)
 󰌓 ▏XF86AudioLowerVolume              Decrease Volume
@@ -51,8 +48,9 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏XF86MonBrightnessUp               Brightness UP
 󰌓 ▏XF86MonBrightnessDown             Brightness DOWN
 ━━━━━━━━━━━━━━━━━━━━━━━━━━ Eye Candy ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+󰌓 ▏󰖳 + 󰰮                       Toggle Waybar
 󰌓 ▏󰖳 + 󰘶 + 󰰥                   Select Theme
-󰌓 ▏󰖳 + 󰘶 + 󰯬                   Wallbash Mode
+󰌓 ▏󰖳 + 󰘶 + 󰯯                   Toggle Wallbash Mode
 󰌓 ▏󰖳 + 󰘶 + 󰰐                   Change Rofi's Style
 󰌓 ▏󰖳 + 󰘶 + 󰰮                   Select Wallpaper
 󰌓 ▏󰖳 + 󰘶 + 󰰟                   Random Wallpaper
@@ -60,7 +58,6 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏N/A                         Prev Wallpaper
 󰌓 ▏󰖳 + ALT + 󰜷                 Next Waybar Mode
 󰌓 ▏󰖳 + ALT + 󰜮                 Prev Waybar Mode
-󰌓 ▏󰖳 + 󰘶 + 󰯵                   Toggle Wallbash
 󰌓 ▏󰘶 + ALT + 󰲠                 Shader (BlueFilter)
 󰌓 ▏󰘶 + ALT + 󰲢                 Shader (ExtraDark)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━ Windows ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -102,7 +99,8 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏CTRL + ALT 󰲮                Window To 8th Workspace
 󰌓 ▏CTRL + ALT 󰲰                Window To 9th Workspace
 ━━━━━━━━━━━━━━━━━━━━━━━━━━ Tmux ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏CTRL + 󰯬                      Tmux: Main Prefix
+󰌓 ▏CTRL + Space                      Tmux: Main Prefix
+󰌓 ▏Prefix + Alt + 󰰨              Tmux: Update Plugins
 󰌓 ▏Prefix + ?                    Tmux: List Keymaps
 󰌓 ▏Prefix + 󰘶 + 󰰟                Tmux: Reload
 󰌓 ▏Prefix + [ OR 󰌑               Tmux: Enter Vim-Mode
@@ -187,14 +185,6 @@ case "$selected" in
     killall waybar
   else
     waybar &
-  fi
-  ;;
-"Toggle gBar")
-  # TODO: doesn't seem to work correctly
-  if pgrep -x "gBar" >/dev/null; then
-    killall gBar
-  else
-    gBar &
   fi
   ;;
 "Open btop")
@@ -325,9 +315,6 @@ case "$selected" in
   ;;
 "Prev Waybar Mode")
   ~/.config/hypr/scripts/wbarconfgen.sh p
-  ;;
-"Toggle Wallbash")
-  ~/.config/hypr/scripts/wallbashtoggle.sh
   ;;
 "Shader (BlueFilter)")
   hyprshade toggle bluefilter

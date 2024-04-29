@@ -3,6 +3,6 @@ bluetooth
 sddm
 ufw
 apparmor
-tlp
+# tlp
 auto-cpufreq
 swayosd-libinput-backend

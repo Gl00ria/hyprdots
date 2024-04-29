@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# ┌                                                          ┐
+# │                                                          │
+# │                    Edited by @Gl00ria                    │
+# │                                                          │
+# └                                                          ┘
 #|---/ /+-------------------------------------+---/ /|#
 #|--/ /-| Script to apply pre install configs |--/ /-|#
 #|-/ /--| Prasanth Rangan                     |-/ /--|#
