@@ -1,7 +1,3 @@
 NetworkManager
 bluetooth
 sddm
-ufw
-apparmor
-auto-cpufreq
-swayosd-libinput-backend

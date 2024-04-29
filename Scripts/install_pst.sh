@@ -90,10 +90,28 @@ fi
 #
 # └──────────────────────────────────────────────────────────┘
 
+# SwayOSD
+if pacman -Qi ufw &>/dev/null; then
+  echo -e "\033[0;33m[ENABLE]\033[0m (swayosd-libinput-backend.service)"
+  sudo systemctl enable swayosd-libinput-backend.service
+else
+  echo -e '\033[0;33m[SwayOSD]\033[0m is not installed, no worries. Its extra personal ' >&2
+fi
+
+# Firewall (Uncompleted Friewall 'ufw')
+if pacman -Qi ufw &>/dev/null; then
+  echo -e "\033[0;33m[ENABLE]\033[0m (ufw.service)"
+  sudo systemctl enable tlp.service
+else
+  echo -e '\033[0;33m[UFW]\033[0m is not installed, no worries. Its extra personal ' >&2
+fi
+
 # TLP
 if pacman -Qi tlp &>/dev/null; then
   echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/tlp.conf) \033[0;33m-->\033[0m (/etc/)"
   sudo cp "../Configs/etc/tlp.conf" /etc/
+  echo -e "\033[0;33m[ENABLE]\033[0m (tlp.service)"
+  sudo systemctl enable tlp.service
 else
   echo -e '\033[0;33m[TLP]\033[0m is not installed, no worries. Its extra personal ' >&2
 fi
@@ -102,6 +120,8 @@ fi
 if pacman -Qi auto-cpufreq &>/dev/null; then
   echo -e "\033[0;33m[COPY]\033[0m (Configs/etc/auto-cpufreq.conf) \033[0;33m-->\033[0m (/etc/)"
   sudo cp "../Configs/etc/auto-cpufreq.conf" /etc/
+  echo -e "\033[0;33m[ENABLE]\033[0m (auto-cpufreq.service)"
+  sudo systemctl enable auto-cpufreq.service
 else
   echo -e '\033[0;33m[AUTO-CPUFREQ]\033[0m is not installed, no worries. Its extra personal' >&2
 fi
@@ -119,12 +139,14 @@ fi
 if pacman -Qi apparmor &>/dev/null; then
   echo -e "\033[0;33m[ADD]\033[0m (Apparmor modules) \033[0;33m-->\033[0m (/etc/default/grub)"
   sudo sed -i "/^GRUB_CMDLINE_LINUX=/c\GRUB_CMDLINE_LINUX='lsm=landlock,lockdown,yama,apparmor,bqf'" /etc/default/grub
-  echo -e "\033[0;33m[ADD ${USER}]\033[0m (TO Audit Group) \033[0;33m-->\033[0m"
+  echo -e "\033[0;33m[ADD ${USER}]\033[0m to \033[0;33m-->\033[0m (Audit Group) for 'APPARMOR'"
   sudo groupadd -r audit
   sudo gpasswd -a $USER audit
-  echo -e "\033[0;33m[ADD AUDIT GROUP]\033[0m (to auditd.conf) \033[0;33m-->\033[0m"
+  echo -e "\033[0;33m[CHANGE LOG_GROUP FROM ROOT TO 'AUDIT']\033[0m \033[0;33m-->\033[0m (in auditd.conf)"
   sudo sed -i "/^log_group = root/c\log_group = audit" /etc/audit/auditd.conf
   echo -e "\033[0;33m[REGENERATE]\033[0m (GRUB) \033[0;33m-->\033[0m (After adding 'Aapparmor modules')"
+  echo -e "\033[0;33m[ENABLE]\033[0m (apparmor.service)"
+  sudo systemctl enable apparmor.service
   sudo grub-mkconfig -o /boot/grub/grub.cfg
 else
   echo -e '\033[0;33m[APPARMOR]\033[0m is not installed, no worries. Its extra personal' >&2
