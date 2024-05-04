@@ -205,7 +205,7 @@ qt5-graphicaleffects                            # for sddm theme effects
 
 # --------------------------------------------------- // Window Manager
 hyprland                         # wlroots-based wayland compositor, config == True
-dunst                            # notification daemon, config == True
+swaync                           # notification daemon, config == True
 rofi-lbonn-wayland-git           # application launcher, config == True
 waybar                           # system bar, config == True
 swww                             # wallpaper, config == True

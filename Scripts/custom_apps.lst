@@ -15,6 +15,7 @@ lollypop                        # music player
 drawio-desktop-bin              # diagram drawing
 cpupower-gui                    # CPU frequency limits
 missioncenter                   # monitor (CPU, GPU, network, disk & memory)
+dunst                           # notification daemon, config == True
 haruna                          # video player
 konsole                         # terminal support witin 'dolphin' (F4)
 dolphin-plugins

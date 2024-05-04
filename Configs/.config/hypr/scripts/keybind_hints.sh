@@ -26,6 +26,7 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏󰖳 + 󰯸                              Dolphin
 󰌓 ▏ALT + 󱁐                          App Launcher
 󰌓 ▏󰖳 + 󰰍                             Lookscreen
+󰌓 ▏󰖳 + 󰰓                         Notification Center
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Utils ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏󰖳 + 󰰟                          Browse File System
 󰌓 ▏󰖳 + Tab                        List Opened Apps
@@ -99,8 +100,8 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏CTRL + ALT 󰲮                Window To 8th Workspace
 󰌓 ▏CTRL + ALT 󰲰                Window To 9th Workspace
 ━━━━━━━━━━━━━━━━━━━━━━━━━━ Tmux ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-󰌓 ▏CTRL + Space                      Tmux: Main Prefix
-󰌓 ▏Prefix + Alt + 󰰨              Tmux: Update Plugins
+󰌓 ▏CTRL + 󰯬                      Tmux: Main Prefix
+󰌓 ▏Prefix + Alt + 󰰨              Tmux: List Keymaps
 󰌓 ▏Prefix + ?                    Tmux: List Keymaps
 󰌓 ▏Prefix + 󰘶 + 󰰟                Tmux: Reload
 󰌓 ▏Prefix + [ OR 󰌑               Tmux: Enter Vim-Mode
@@ -179,6 +180,9 @@ case "$selected" in
   ;;
 "Lookscreen")
   ~/.config/hypr/scripts/logoutlaunch.sh 1
+  ;;
+"Notification Center")
+  swaync-client -t
   ;;
 "Toggle Waybar")
   if pgrep -x "waybar" >/dev/null; then
