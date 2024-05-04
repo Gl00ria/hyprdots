@@ -200,6 +200,7 @@ For more information, visit [prasanthrangan/hyde-themes](https://github.com/pras
 | <kbd>XF86AudioPrev</kbd>                              | Play-Prev (Knob, in my case)         |
 | <kbd>XF86MonBrightnessUp</kbd>                        | Brightness UP (Knob, in my case)     |
 | <kbd>XF86MonBrightnessDown</kbd>                      | Brightness Down (Knob, in my case)   |
+| <kbd>Super</kbd> + <kbd>N</kbd>                       | Notification Center                  |
 | ----------------------------------------------------- | ------------------------------------ |
 | EYE-CANDY                                             |                                      |
 | ----------------------------------------------------- | ------------------------------------ |
