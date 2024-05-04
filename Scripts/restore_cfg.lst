@@ -2,6 +2,7 @@ Y|Y|${HOME}/.config/|hyde|hyprland
 Y|Y|${HOME}/.config/|hypr|hyprland
 N|Y|${HOME}/.config/hypr|nvidia.conf|hyprland nvidia-utils
 Y|Y|${HOME}/.config|dunst|dunst
+Y|Y|${HOME}/.config|swaync|swaync
 Y|Y|${HOME}/.config|kitty|kitty
 Y|Y|${HOME}/.config|alacritty|alacritty
 Y|Y|${HOME}/.config|fastfetch|fastfetch
