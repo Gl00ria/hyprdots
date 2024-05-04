@@ -100,8 +100,13 @@ ln -s "${themeDir}/${gtkTheme}/gtk-4.0" "${confDir}/gtk-4.0"
 #// flatpak GTK
 
 if pkg_installed flatpak ; then
+  if [ "${enableWallDcol}" -eq 0 ] ; then
     flatpak --user override --env=GTK_THEME="${gtkTheme}"
     flatpak --user override --env=ICON_THEME="${gtkIcon}"
+  else
+    flatpak --user override --env=GTK_THEME="Wallbash-Gtk"
+    flatpak --user override --env=ICON_THEME="${gtkIcon}"
+  fi
 fi
 
 
