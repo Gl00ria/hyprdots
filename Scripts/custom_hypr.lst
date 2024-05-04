@@ -160,7 +160,6 @@ dolphin                          # kde file manager
 qt5-imageformats                 # for dolphin image thumbnails
 ffmpegthumbs                     # for dolphin video thumbnails
 kde-cli-tools                    # for dolphin file type defaults
-kservice5                        # for "open with" menu in dolphin
 ark                              # kde file archiver
 libreoffice-fresh                # Microsoft Offics's alternative
 vmware-workstation               # VM
