@@ -47,6 +47,10 @@ ttf-hack-nerd                # optional (neovide)
 ttf-bitstream-vera
 cantarell-fonts
 ttf-dejavu
+# --------------------------------------------------- // Keyboard Switch
+fcitx5
+fcitx5-qt
+fcitx5-configtool
 # --------------------------------------------------- // Misc
 python-pyamdgpuinfo          # for amd gpu info
 spotify                      # config == True
