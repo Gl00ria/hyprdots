@@ -72,6 +72,7 @@ exec swayosd-server &
 #  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 #  ┃                          Utils                           ┃
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+# fcitx5 -d &  # run keyboard swithc Util as daemon
 # idle
 # swayidle -w timeout 600 "swaylock" before-sleep "swaylock" & # lock screen after 10 min of idle
 # swayidle -w timeout 1200 "systemctl hibernate" &             # hibernate after 20 mins of idle
