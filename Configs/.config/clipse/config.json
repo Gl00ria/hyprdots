@@ -1,0 +1,6 @@
+{
+    "historyFile": "~/.custom_db/clipboard_history.json",
+    "maxHistory": 100,
+    "themeFile": "./themes/catppuccin.json",
+    "tempDir": "tmp_files"
+}

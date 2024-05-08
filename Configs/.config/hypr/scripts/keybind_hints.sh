@@ -30,7 +30,7 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Utils ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏󰖳 + 󰰟                          Browse File System
 󰌓 ▏󰖳 + Tab                        List Opened Apps
-󰌓 ▏󰖳 + 󰘶  + 󰰫                       Open Clipboard
+󰌓 ▏󰖳 + 󰰫                            Open Clipboard
 󰌓 ▏󰖳 + 󰰐                              Rhythmbox
 󰌓 ▏CTRL + ALT + Delete                Open btop
 󰌓 ▏Print                         Screenshot (Current Monitor)
@@ -216,11 +216,7 @@ case "$selected" in
   fi
   ;;
 "Open Clipboard")
-  if pgrep -x "rofi" >/dev/null; then
-    killall rofi
-  else
-    ~/.config/hypr/scripts/cliphist.sh c
-  fi
+  kitty --class floating -e zsh -c 'clipse'
   ;;
 #━━━━━━━━━━━━━━━━━━ Utils ━━━━━━━━━━━━━
 "Screenshot (Current Monitor)")
