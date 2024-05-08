@@ -2,7 +2,8 @@
     autocorrect = 7
 
 [core]
-    pager = delta
+    # pager = delta
+    pager = diff-so-fancy
 
 [interactive]
     diffFilter = delta --color-only

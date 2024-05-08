@@ -94,8 +94,8 @@ btop          # (CPU, memory, disks, netword & processes) monitor config == True
 
 # --------------------------------------------------- // Git
 git
-lazygit|git                              # awesome TUI for git, config == True
-git-delta|git                            # syntax-highlihgting pager
+lazygit|git                                # awesome TUI for git, config == True
+diff-so-fancy|lazygit                      # syntax-highlihgting pager
 
 # --------------------------------------------------- // Editors
 vim                                      # come on :)

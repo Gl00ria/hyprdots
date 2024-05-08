@@ -1,0 +1,150 @@
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
+# ╒══════════════════════════════════════════════════════════╕
+# │                                                          │
+# │                 Catppuccin/mocha/sapphire                │
+# │                                                          │
+# ╘══════════════════════════════════════════════════════════╛
+gui:
+  theme:
+    activeBorderColor:
+      - "#74c7ec"
+      - bold
+    inactiveBorderColor:
+      - "#a6adc8"
+    optionsTextColor:
+      - "#89b4fa"
+    selectedLineBgColor:
+      - "#313244"
+    cherryPickedCommitBgColor:
+      - "#45475a"
+    cherryPickedCommitFgColor:
+      - "#74c7ec"
+    unstagedChangesColor:
+      - "#f38ba8"
+    defaultFgColor:
+      - "#cdd6f4"
+    searchingActiveBorderColor:
+      - "#f9e2af"
+
+  authorColors:
+    "*": "#b4befe"
+# ╒══════════════════════════════════════════════════════════╕
+# │                                                          │
+# │              Catppuccin/macchiato/sapphire               │
+# │                                                          │
+# ╘══════════════════════════════════════════════════════════╛
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#7dc4e4"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a5adcb"
+#     optionsTextColor:
+#       - "#8aadf4"
+#     selectedLineBgColor:
+#       - "#363a4f"
+#     cherryPickedCommitBgColor:
+#       - "#494d64"
+#     cherryPickedCommitFgColor:
+#       - "#7dc4e4"
+#     unstagedChangesColor:
+#       - "#ed8796"
+#     defaultFgColor:
+#       - "#cad3f5"
+#     searchingActiveBorderColor:
+#       - "#eed49f"
+
+#   authorColors:
+#     "*": "#b7bdf8"
+# ╒══════════════════════════════════════════════════════════╕
+# │                                                          │
+# │                 Catppuccin/macchiato/sky                 │
+# │                                                          │
+# ╘══════════════════════════════════════════════════════════╛
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#91d7e3"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a5adcb"
+#     optionsTextColor:
+#       - "#8aadf4"
+#     selectedLineBgColor:
+#       - "#363a4f"
+#     cherryPickedCommitBgColor:
+#       - "#494d64"
+#     cherryPickedCommitFgColor:
+#       - "#91d7e3"
+#     unstagedChangesColor:
+#       - "#ed8796"
+#     defaultFgColor:
+#       - "#cad3f5"
+#     searchingActiveBorderColor:
+#       - "#eed49f"
+
+#   authorColors:
+#     "*": "#b7bdf8"
+# ╒══════════════════════════════════════════════════════════╕
+# │                                                          │
+# │                Catppuccin/frappe/sapphire                │
+# │                                                          │
+# ╘══════════════════════════════════════════════════════════╛
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#85c1dc"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a5adce"
+#     optionsTextColor:
+#       - "#8caaee"
+#     selectedLineBgColor:
+#       - "#414559"
+#     cherryPickedCommitBgColor:
+#       - "#51576d"
+#     cherryPickedCommitFgColor:
+#       - "#85c1dc"
+#     unstagedChangesColor:
+#       - "#e78284"
+#     defaultFgColor:
+#       - "#c6d0f5"
+#     searchingActiveBorderColor:
+#       - "#e5c890"
+
+#   authorColors:
+#     "*": "#babbf1"
+# ╒══════════════════════════════════════════════════════════╕
+# │                                                          │
+# │                 Catppuccin/frappe/green                  │
+# │                                                          │
+# ╘══════════════════════════════════════════════════════════╛
+# gui:
+#   theme:
+#     activeBorderColor:
+#       - "#a6d189"
+#       - bold
+#     inactiveBorderColor:
+#       - "#a5adce"
+#     optionsTextColor:
+#       - "#8caaee"
+#     selectedLineBgColor:
+#       - "#414559"
+#     cherryPickedCommitBgColor:
+#       - "#51576d"
+#     cherryPickedCommitFgColor:
+#       - "#a6d189"
+#     unstagedChangesColor:
+#       - "#e78284"
+#     defaultFgColor:
+#       - "#c6d0f5"
+#     searchingActiveBorderColor:
+#       - "#e5c890"
+
+#   authorColors:
+#     "*": "#babbf1"
+
