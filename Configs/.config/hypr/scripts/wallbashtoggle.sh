@@ -56,5 +56,7 @@ esac
 export reload_flag=1
 [[ "${setMode}" -lt 0 ]] && setMode=$((${#wallbashModes[@]} - 1))
 set_conf "enableWallDcol" "${setMode}"
-"${scrDir}/swwwallpaper.sh"
-notify-send -a "t1" -i "$HOME/.config/dunst/icons/hyprdots.png" " ${wallbashModes[setMode]} mode"
+"${scrDir}/swwwallpaper.sh" -s "$(readlink "${hydeThemeDir}/wall.set")"
+notify-send -a "t1" -i "~/.config/dunst/icons/hyprdots.png" " ${wallbashModes[setMode]} mode"
+
+

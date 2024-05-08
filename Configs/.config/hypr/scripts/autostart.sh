@@ -50,8 +50,8 @@ nm-applet --indicator &               # systray app for Network/Wifi
 #  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 #  ┃                      Notifications                       ┃
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-dunst &
-# swaync &
+# dunst &
+swaync &
 
 # battery notification
 ~/.config/hypr/scripts/batterynotify.sh &
@@ -72,16 +72,15 @@ exec swayosd-server &
 #  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 #  ┃                          Utils                           ┃
 #  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-# fcitx5 -d &  # run keyboard swithc Util as daemon
+# idle
+hypridle &
+
 # idle
 # swayidle -w timeout 600 "swaylock" before-sleep "swaylock" & # lock screen after 10 min of idle
 # swayidle -w timeout 1200 "systemctl hibernate" &             # hibernate after 20 mins of idle
 
 # touchpad gestures
 # libinput-gestures-setup start &
-
-# automatic mount storage-devices
-# udiskie &
 
 #  ╔══════════════════════════════════════════════════════════╗
 #  ║            stores password & encryption keys             ║
