@@ -108,14 +108,15 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏Prefix + ]                    Tmux: Paste Last Yanked
 󰌓 ▏Prefix + =                    Tmux: Show older yanked text
 󰌓 ▏Prefix + 󱁐                    Tmux: Change Layout
-󰌓 ▏Prefix + 󰘶 + 󰯲            Tmux: Customize options
-󰌓 ▏Prefix + 󰘶 + 󰰄            Tmux: Install plugin
+󰌓 ▏Prefix + 󰘶 + 󰯲                Tmux: Customize options
+󰌓 ▏Prefix + 󰘶 + 󰰄                Tmux: Install plugin
+󰌓 ▏Prefix + 󰯾                    Tmux: Open LazyGit
 ━━━━━━━━━━━━━━━━━━━━━ Tmux Sessions ━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏Prefix + 󰰢                    Tmux: Choose session
 󰌓 ▏Prefix + Hold 󰰢               Tmux: Save session
 󰌓 ▏Prefix + 󰰓                    Tmux: New Session
 󰌓 ▏Prefix + 󰯵                    Tmux: Detach session
-󰌓 ▏Prefix + 󰘶 + 󰯵            Tmux: Choose session
+󰌓 ▏Prefix + 󰘶 + 󰯵                Tmux: Choose session
 󰌓 ▏Prefix + $                    Tmux: Rename Session
 󰌓 ▏Prefix + 󰰟                    Tmux: Restore session
 󰌓 ▏Prefix + 󰰍                    Tmux: GoTo Last session
@@ -137,7 +138,7 @@ keybinds_hint="󰌓 ▏Keybinds                     |          󱧣 Description
 󰌓 ▏Prefix + 󰘶 + ,                Tmux: Navigate to Prev Window
 ━━━━━━━━━━━━━━━━━━━━━━━ Tmux Panes ━━━━━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏Prefix + 󰰜                    Tmux: Display pane numbers
-󰌓 ▏Prefix + 󰘶 + 󰰐            Tmux: Clear Marked pane
+󰌓 ▏Prefix + 󰘶 + 󰰐                Tmux: Clear Marked pane
 󰌓 ▏Prefix + 󰰱                    Tmux: Kill pane
 ━━━━━━━━━━━━━━━━━━━━ Tmux Panes Resize ━━━━━━━━━━━━━━━━━━━━━━
 󰌓 ▏Prefix + 󰘶 + 󰰇                    Tmux: Resize DOWN
