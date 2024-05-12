@@ -227,6 +227,9 @@ ttf-victor-mono-nerd                 # for (hyprlock, dunst, neovide, kitty)
 ttf-cascadia-code-nerd               # for (waybar)
 ttf-material-design-icons-git
 ttf-maple                            # for visual-studio-code-bin
+ttf-dejavu                           # RTL font
+vazir-code-fonts                     # RTL font
+otf-kawkab-mono                      # RTL font
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
