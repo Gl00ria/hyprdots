@@ -209,6 +209,8 @@ rofi-lbonn-wayland-git           # application launcher, config == True
 waybar                           # system bar, config == True
 swww                             # wallpaper, config == True
 hyprlock                         # lock screen, config == True
+hyprshade
+hypridle
 wlogout                          # logout menu, config == True
 grimblast-git                    # screenshot tool
 slurp                            # region select for screenshot/screenshare
