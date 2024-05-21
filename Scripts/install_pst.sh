@@ -17,39 +17,39 @@ if [ $? -ne 0 ]; then
 fi
 
 # sddm
-if pkg_installed sddm; then
+# if pkg_installed sddm; then
 
-  echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m detected // sddm"
-  if [ ! -d /etc/sddm.conf.d ]; then
-    sudo mkdir -p /etc/sddm.conf.d
-  fi
+#   echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m detected // sddm"
+#   if [ ! -d /etc/sddm.conf.d ]; then
+#     sudo mkdir -p /etc/sddm.conf.d
+#   fi
 
-  if [ ! -f /etc/sddm.conf.d/kde_settings.t2.bkp ]; then
-    echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m configuring sddm..."
-    echo -e "Select sddm theme:\n[1] Candy\n[2] Corners"
-    read -p " :: Enter option number : " sddmopt
+#   if [ ! -f /etc/sddm.conf.d/kde_settings.t2.bkp ]; then
+#     echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m configuring sddm..."
+#     echo -e "Select sddm theme:\n[1] Candy\n[2] Corners"
+#     read -p " :: Enter option number : " sddmopt
 
-    case $sddmopt in
-    1) sddmtheme="Candy" ;;
-    *) sddmtheme="Corners" ;;
-    esac
+#     case $sddmopt in
+#     1) sddmtheme="Candy" ;;
+#     *) sddmtheme="Corners" ;;
+#     esac
 
-    sudo tar -xzf ${cloneDir}/Source/arcs/Sddm_${sddmtheme}.tar.gz -C /usr/share/sddm/themes/
-    sudo touch /etc/sddm.conf.d/kde_settings.conf
-    sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
-    sudo cp /usr/share/sddm/themes/${sddmtheme}/kde_settings.conf /etc/sddm.conf.d/
-  else
-    echo -e "\033[0;33m[SKIP]\033[0m \033[0;33m-->\033[0m sddm is already configured..."
-  fi
+#     sudo tar -xzf ${cloneDir}/Source/arcs/Sddm_${sddmtheme}.tar.gz -C /usr/share/sddm/themes/
+#     sudo touch /etc/sddm.conf.d/kde_settings.conf
+#     sudo cp /etc/sddm.conf.d/kde_settings.conf /etc/sddm.conf.d/kde_settings.t2.bkp
+#     sudo cp /usr/share/sddm/themes/${sddmtheme}/kde_settings.conf /etc/sddm.conf.d/
+#   else
+#     echo -e "\033[0;33m[SKIP]\033[0m \033[0;33m-->\033[0m sddm is already configured..."
+#   fi
 
-  if [ ! -f /usr/share/sddm/faces/${USER}.face.icon ] && [ -f ${cloneDir}/Source/misc/${USER}.face.icon ]; then
-    sudo cp ${cloneDir}/Source/misc/${USER}.face.icon /usr/share/sddm/faces/
-    echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m avatar set for ${USER}..."
-  fi
+#   if [ ! -f /usr/share/sddm/faces/${USER}.face.icon ] && [ -f ${cloneDir}/Source/misc/${USER}.face.icon ]; then
+#     sudo cp ${cloneDir}/Source/misc/${USER}.face.icon /usr/share/sddm/faces/
+#     echo -e "\033[0;32m[DISPLAYMANAGER]\033[0m avatar set for ${USER}..."
+#   fi
 
-else
-  echo -e "\033[0;33m[WARNING]\033[0m sddm is not installed..."
-fi
+# else
+#   echo -e "\033[0;33m[WARNING]\033[0m sddm is not installed..."
+# fi
 
 # dolphin
 if pkg_installed dolphin && pkg_installed xdg-utils; then
@@ -102,6 +102,12 @@ fi
 if pacman -Qi ufw &>/dev/null; then
   echo -e "\033[0;33m[ENABLE]\033[0m (ufw.service)"
   sudo systemctl enable ufw.service
+  echo -e "\033[0;33m[SETTING-UP]\033[0m (UFW)"
+  sudo ufw default deny # deny all
+  # sudo ufw allow from 192.168.0.0/24
+  sudo ufw allow Deluge
+  sudo ufw limit ssh # limit ssh
+  sudo ufw enable
 else
   echo -e '\033[0;33m[UFW]\033[0m is not installed, no worries. Its extra personal ' >&2
 fi
@@ -122,6 +128,7 @@ if pacman -Qi auto-cpufreq &>/dev/null; then
   sudo cp "../Configs/etc/auto-cpufreq.conf" /etc/
   echo -e "\033[0;33m[ENABLE]\033[0m (auto-cpufreq.service)"
   sudo systemctl enable auto-cpufreq.service
+  sudo systemctl start auto-cpufreq.service
 else
   echo -e '\033[0;33m[AUTO-CPUFREQ]\033[0m is not installed, no worries. Its extra personal' >&2
 fi
@@ -173,12 +180,19 @@ if [[ -d ~/Pictures/wallpapers/ ]]; then
   echo -e "\033[0;33m[BACKING UP]\033[0m (Current wallpapers) \033[0;33m-->\033[0m (~/.config/cfg_backups/wallpapers_$(date +'%H:%M:%S_%d-%m-%Y'))"
   mv ~/Pictures/wallpapers/ ~/.config/cfg_backups/wallpapers_$(date +'%H:%M:%S_%d-%m-%Y')
   echo -e "\033[0;33m[CLONE]\033[0m (My Wallpapers) \033[0;33m-->\033[0m (~/Pictures/wallpapers/)"
-  git clone https://github.com/Gl00ria/wallpapers.git ~/Pictures/wallpapers/
+  git clone https://github.com/Gl00ria/wallpapers.git ~/Pictures/
 else
   echo -e "\033[0;33m[CLONE]\033[0m (My Wallpapers) \033[0;33m-->\033[0m (~/Pictures/wallpapers/)"
-  git clone https://github.com/Gl00ria/wallpapers.git ~/Pictures/wallpapers/
+  git clone https://github.com/Gl00ria/wallpapers.git ~/Pictures/
 fi
 
 # copy extra vars to /etc/sudoers.d/
 echo -e "\033[0;33m[COPY]\033[0m (Extra Env Vars) \033[0;33m-->\033[0m (/etc/sudoers.d/)"
 sudo cp "../Configs/etc/sudoers.d/custom_env" /etc/sudoers.d/
+
+# SDDM theme (https://github.com/Keyitdev/sddm-astronaut-theme)
+echo -e "\033[0;33m[SETTING-UP]\033[0m \033[0;33m(SDDM-THEME) \033[0m"
+sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
+sudo cp /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+echo "[Theme]
+Current=sddm-astronaut-theme" | sudo tee /etc/sddm.conf
