@@ -101,7 +101,7 @@ fi
 # Firewall (Uncompleted Friewall 'ufw')
 if pacman -Qi ufw &>/dev/null; then
   echo -e "\033[0;33m[ENABLE]\033[0m (ufw.service)"
-  sudo systemctl enable tlp.service
+  sudo systemctl enable ufw.service
 else
   echo -e '\033[0;33m[UFW]\033[0m is not installed, no worries. Its extra personal ' >&2
 fi
