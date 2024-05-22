@@ -6,6 +6,9 @@ export TERM="xterm-256color" # getting proper colors
 # https://unix.stackexchange.com/questions/185537/combining-zsh-s-tab-completion-with-case-insensitivity
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
+# (https://stackoverflow.com/questions/62931101/i-have-multiple-files-of-zcompdump-why-do-i-have-multiple-files-of-these)
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
 # setup zsh history
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
