@@ -1,4 +1,5 @@
 # --------------------------------------------------- // GUI Apps/Utils
+trash-cli                       # rm's alternative --> alias == True
 alacritty                       # terminal emulator, config == True
 thunderbird                     # email client
 brave-bin                       # browser

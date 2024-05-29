@@ -29,7 +29,11 @@ fs-type() {
 }
 
 alias free-mem="free -h"
-alias rm="trash-put "
+# alias rm="trash-put "
+alias tp="gtrash put"
+alias tr="gtrash restore"
+alias ts="gtrash summary"
+alias tf="gtrash find"
 alias icat="kitty +kitten icat" ## view image with lolo caty
 
 # enable color support of ls and also add handy aliases

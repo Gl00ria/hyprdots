@@ -135,7 +135,7 @@ fastfetch                        # system information fetch tool
 zoxide                           # cd's alternative --> alias = True
 eza                              # ls's alternative --> alias == True
 bat                              # cat's alternative --> alias == True
-trash-cli                        # rm's alternative --> alias == True
+gtrash                           # rm's alternative --> alias == True
 ripgrep                          # grep's alternative --> alias == True
 fd                               # find's alternative --> alias == True
 fzf                              # fuzzy finder --> alias == True
